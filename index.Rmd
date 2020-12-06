@@ -2,12 +2,14 @@
 title: " "
 ---
 
+&nbsp;
+
+## About Me
 <center>
 <img src="emileighharrison.github.io/files/circ_desk.png" style="width:30%">
 </center>
 
 Emileigh Harrison is a PhD student at the University of Chicago Harris School of Public Policy where her doctoral studies are focused on education and inequality. Her research interests include non-traditional education paths such as community college and homeschooling. Specifically she is interested in the impact of stricter homeschooling regulations on health and academic outcomes for homeschooled children. She is also a doctoral fellow at the Center for Data and Computing (CDAC).  
-
 
 &nbsp;
 &nbsp;  
@@ -20,17 +22,17 @@ library(magrittr)
 
 # Create data
 data <- data.frame(
-  x=c(2000, 2005 ,2007,
+  x=c(2000, 2004 ,2007,
       2011, 2012.5,
       2013, 2015,
       2016.7, 2017.75, 
       2017.75, 2019.5),
   y=c(0.1, -0.4, -1,
       0.05, -1,
-      1.1, 0.5,
+      1.1, 0.7,
        -0.5, -1.6,
       0.1, 1),
-  text = c("Started \n Homeschool", "Learned to Knit", "Broke my Wrist Sledding",
+  text = c("Started \n Homeschool", "Got my First \n Library Card", "Broke my Wrist Sledding",
 "Transferred to \n Public School", "Started a Small Business \n to Pay for School", 
 "Started \n Community College", "Transferred \n to UW-Oshkosh",
 "Realized Math was Important", "Became the First in my Family \n to Earn a Bachelor's Degree", 
@@ -58,12 +60,12 @@ ggplot(data, aes(x=x, y=y)) +
     axis.text.x = element_blank(),
     legend.position = "none"
   ) +
-  scale_color_manual(values=c("darkorange", "darkgreen")) + 
+  scale_color_manual(values=c("#edae49", "#66a182")) + 
   xlab("") +
   ylab("") +
   ylim(-2,2) + 
   xlim(1999,2022) + 
-  geom_text(aes(label = text, y=shift), size = 2, color="grey20") +
+  geom_text(aes(label = text, y=shift), size = 2.5, color="grey20") +
   annotate("text", x = 2000, y = 0.08, label = "2000", color="grey60", size=3) + 
     annotate("text", x = 2005, y = 0.08, label = "2005", color="grey60", size=3) + 
     annotate("text", x = 2010, y = 0.08, label = "2010", color="grey60", size=3) + 
