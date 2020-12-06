@@ -2,14 +2,7 @@
 title: "My cats have a website!"
 ---
 
-This is John.
+Bio Goes here
 
-<img src="files/john.jpg" style="width:50%">
+<img src="files/outdoor_headshot.jpg" style="width:50%">
 
-This is Pete.
-
-<img src="files/pete.jpg" style="width:50%">
-
-They are brothers!
-
-<img src="files/brother_kitties.jpg" style="width:50%">
