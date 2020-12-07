@@ -2,6 +2,9 @@
 title: " "
 ---
 
-## UChicago PhD Problemsets
+&nbsp;
 
-[![Problemset Visualizations](files/hw_wc.png)](problemsets.html)
+<center>
+[**A Day in the Life of a First Year Harris PhD**](problemsets.html)
+[![Problemset Visualizations](files/hw_wc.png){ width=50% }](problemsets.html)
+</center>

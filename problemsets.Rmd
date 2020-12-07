@@ -5,8 +5,12 @@ title: " "
 &nbsp;
 
 
-## Visualizing Problemsets
-The following figures are visualizations of every single problemset I poured over while completing the Harris PhD core curriculum, starting with a wordcloud! If you hover over a word, you can see exactly how many times I typed that specific word into LaTex during the first year of my program. I was a little suprised not to see concavity featured more prominently considering how much time I spent checking second order conditions.
+## A Day in the Life of a First Year Harris PhD
+The following figures are visualizations of every single problemset I poured over while completing the Harris PhD core curriculum. Specifically, these are the problemsets I worked through while studying Micreconomics, Econometrics, and Game Theory.  
+
+First up is a wordcloud! If you hover over a word, you can see exactly how many times I typed that specific word into LaTex during the first year of my program. For example, I typed the word "function" 188 times!  
+
+I was a little suprised not to see concavity featured more prominently considering how much time I spent checking second order conditions.
 
 ```{r warnings=FALSE, message=FALSE, echo=FALSE, fig.align="center"}
 counts <- read.csv("files/words.csv")
