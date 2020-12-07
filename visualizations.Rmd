@@ -5,6 +5,6 @@ title: " "
 &nbsp;
 
 <center>
-[**A Day in the Life of a First Year Harris PhD**](problemsets.html)
+<font size="4">[**A Day in the Life of a First Year Harris PhD**](problemsets.html)</font> 
 [![Problemset Visualizations](files/hw_wc.png){ width=50% }](problemsets.html)
 </center>
