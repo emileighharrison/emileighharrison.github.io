@@ -1,10 +1,10 @@
 ---
 title: " "
-output: html_document
 ---
- 
-  
-### Works In Progress
+
+&nbsp;
+
+##  Works In Progress
 
 **Measuring inequality and intersectionality in representation: Evidence from children’s books**  
 *with Anjali Adukia, Alex Eble, H. Birali Runesha, and Teodora Szasz*  

@@ -1,0 +1,5 @@
+---
+title: " "
+---
+
+[![Problemset Visualizations](emileighharrison.github.io/files/hw_wc.png)](research.html)
