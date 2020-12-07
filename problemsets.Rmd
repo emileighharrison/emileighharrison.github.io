@@ -1,0 +1,32 @@
+---
+title: " "
+---
+
+&nbsp;
+
+
+## Visualizing Problemsets
+The following figures are visualizations of every single problemset I poured over while completing the Harris PhD core curriculum, starting with a wordcloud! If you hover over a word, you can see exactly how many times I typed that specific word into LaTex during the first year of my program. I was a little suprised not to see concavity featured more prominently considering how much time I spent checking second order conditions.
+
+```{r warnings=FALSE, message=FALSE, echo=FALSE, fig.align="center"}
+counts <- read.csv("files/words.csv")
+### ====================================
+### Create Wordcloud
+### ====================================
+library(pdftools)
+library(stringr)
+library(data.table)
+library(tm)
+library(magrittr)
+library(wordcloud2)
+library("htmlwidgets")
+library(webshot)
+webshot::install_phantomjs()
+
+set.seed(124)
+fun_color_range <- colorRampPalette(c(rep("#9e7a86",1),rep("#766487",2),rep("#e0be79",2),rep("#497862",7)))
+my_colors <- fun_color_range(1000) %>% sample()
+
+wordcloud2(data=subset(counts, freq > 8)[,c("word","freq")], color = my_colors, shape="circle")
+
+```
