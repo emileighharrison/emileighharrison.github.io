@@ -49,7 +49,7 @@ data$start <- ifelse(data$y>0,0.15,0) %>% as.numeric()
 data$y <- ifelse(data$y>0,data$y + 0.5, data$y - 0.1) %>% as.numeric()
 data$shift <- ifelse(data$y>0,data$y+0.25,data$y-0.2) %>% as.numeric()
 
-# Change baseline
+# Graph
 ggplot(data, aes(x=x, y=y)) +
   geom_segment(aes(x=x, xend=x, y=start, yend=y), color="grey") +
   geom_point(aes(color=color), size=4) +
