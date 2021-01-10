@@ -5,7 +5,7 @@ title: " "
 &nbsp;
 
 
-## A Year in the Life of a First Year Harris PhD
+## A Year in the Life of a First Year PhD
 <font size="2"> The following figures are visualizations of every single problemset I poured over while completing the Harris PhD core curriculum. Specifically, these are the problemsets I worked through while studying Micreconomics, Econometrics, and Game Theory.  
 
 If you hover over the wordcloud below, you can see exactly how many times I typed a specific word into LaTex during the first year of my program. For example, I typed the word "function" 188 times!  
