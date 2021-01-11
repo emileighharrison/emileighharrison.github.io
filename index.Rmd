@@ -6,7 +6,7 @@ title: " "
 
 ## About Me
 <center>
-<img src="files/headshotwinter.png" style="width:60%">
+<img src="files/headshotwinter.png" style="width:50%">
 </center>
 
 &nbsp;
