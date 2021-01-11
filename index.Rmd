@@ -6,14 +6,14 @@ title: " "
 
 ## About Me
 <center>
-<img src="files/headshotwinter.png" style="width:40%">
+<img src="files/headshotwinter.png" style="width:60%">
 </center>
 
 &nbsp;
 
-<font size="3">Emileigh Harrison is a PhD student at the University of Chicago Harris School of Public Policy. Emileigh seeks to understand how to increase access to education, in particular for women, first-generation college students, and other historically disadvantaged groups. Her work focuses on examining ways to reduce inequality and eliminate barriers to education. Currently, she is studying the effect of statewide transfer policies on the academic outcomes of community college students, as well as changes in gender and racial representation in childrens books over time.   
+<font size="3">Hello! I'm a PhD student studying Public Policy at the University of Chicago. My research focuses on examining ways to reduce inequality and eliminate barriers to education; particularly for women, first-generation college students, and other historically disadvantaged groups. Currently, I am studying the effect of statewide transfer policies on the academic outcomes of community college students, as well as changes in gender and racial representation in children's books over time.   
 
-Emileigh is also a Center for Data and Computing (CDAC) Doctoral Fellow.
+I am also a Center for Data and Computing (CDAC) Doctoral Fellow and a Committee on Education (COE) Fellow at UChicago.
 </font>
 
 &nbsp;
