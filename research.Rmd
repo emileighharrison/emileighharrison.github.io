@@ -7,8 +7,6 @@ title: "Research"
 #  **Working Papers** 
 <hr>
 
-&nbsp;
-
 ### “What We Teach About Race and Gender: Representation in Images and Text of Children’s Books”  <a href="https://bfi.uchicago.edu/wp-content/uploads/2021/04/BFI_WP_2021-44.pdf"> (April 2021, Becker Friedman Institute Working Paper 2021-44)</a>
       
 #### with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a>, <a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H. Birali Runesha</a>, and <a href="https://github.com/DoraSzasz">Teodora Szasz</a>
@@ -28,8 +26,6 @@ title: "Research"
 
 #  **Works In Progress**
 <hr>
-  
-&nbsp;  
   
 #### “The Effect of Automatic Transfer Admission on Community College Student Outcomes”
   
