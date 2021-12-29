@@ -1,0 +1,23 @@
+---
+title: "US Names"
+---
+
+&nbsp;
+
+
+## Baby Names in the U.S.
+<font size="2"> The following figures were made using publicly available Social Security Administration data downloaded from https://www.ssa.gov/oact/babynames/limits.html 
+</font>
+
+
+### Polarization of Baby Names
+<font size="2"> The first time I looked at this data, I was struck by just how polarized names are by gender.
+</font>
+
+<center>
+```{r warnings=FALSE, message=FALSE, echo=FALSE, fig.align="center"}
+names <- read.csv("files/SSA_names_clean.csv")
+
+```
+</center>
+
