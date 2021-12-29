@@ -8,12 +8,5 @@ title: "Visualizations"
 [<font size="4">**A Year in the Life of a First Year PhD**</font> 
 ![Problemset Visualizations](files/hw_wc.png){ width=50% }](problemsets.html)
 
-
-&nbsp;
-
-
-[![Problemset Visualizations](files/hw_wc.png){ width=50% }
-<font size="4">**A History of Names in the U.S.**</font>](problemsets.html)
-
 </center>
 

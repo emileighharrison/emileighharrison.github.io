@@ -17,7 +17,8 @@ title: "Research"
 <a href="https://bfi.uchicago.edu/insight/blog/race-and-gender-in-childrens-books/"><img src="files/interactive_graphs.jpg" align="right"
       style="width:375px;"></a><p>*Books shape how children learn about society and social norms, in part through the representation of different characters. To better understand the messages children encounter in books, we introduce new machine-led methods for systematically converting images into data. We apply these image tools, along with established text analysis methods, to measure the representation of race, gender, and age in children’s books commonly found in US schools and homes over the last century. We find that books selected to highlight people of color, or females of all races, consistently depict characters with darker skin tones than characters in "mainstream" books, which depict lighter-skinned characters even after conditioning on perceived race. Children are depicted with lighter skin than adults, despite no biological foundation for such a difference. Females are more represented in images than in text, suggesting greater symbolic inclusion in pictures than substantive inclusion in stories. Relative to the US Census, Black and Latinx people are underrepresented; whereas males, particularly White males, are persistently overrepresented. Our data provide a view into the "black box" of education through children’s books in US schools and homes, highlighting what has changed and what has endured.*</p>
 
-[Press: <a href="https://www.slj.com/?detailStory=new-study-looks-race-gender-representation-in-award-winning-childrens-books&utm_source=editorial&utm_medium=SLJTW&utm_term=&utm_content=&utm_campaign=articles">School Library Journal</a>, <a href="https://www.wsj.com/articles/jack-and-the-bean-counters-a-woke-childrens-story-11619199026">Wall Street Journal</a>]
+[Press: <a href="https://www.slj.com/?detailStory=new-study-looks-race-gender-representation-in-award-winning-childrens-books&utm_source=editorial&utm_medium=SLJTW&utm_term=&utm_content=&utm_campaign=articles">School Library Journal</a>, <a href="https://www.wsj.com/articles/jack-and-the-bean-counters-a-woke-childrens-story-11619199026">Wall Street Journal</a>, <a href="https://soundcloud.com/codetogether/scivis-unveils-a-billion-cells-covid-19-invisible-monsters">Code Together</a>, <a href="https://inequalitalks.fireside.fm/19">Inequalitalks</a>, <a href="https://www.future-ed.org/what-we-teach-about-race-and-gender/">FutureEd</a>, <a href="https://www.the74million.org/article/study-ai-uncovers-skin-tone-gap-in-most-beloved-childrens-books/">The 74</a>, Named one of the ten most significant studies of 2021 by George Lucas Foundation’s <a href="https://www.edutopia.org/article/10-most-significant-education-studies-2021">Edutopia</a>]
+
 
 
 
@@ -28,7 +29,7 @@ title: "Research"
 #  **Works In Progress**
 <hr>
   
-#### “The Effect of Automatic Transfer Admission on Community College Student Outcomes”
+#### “Representation of Race & Gender in Religious Private School Curriculum”
   
 &nbsp;  
   

@@ -27,18 +27,18 @@ library(magrittr)
 
 # Create data
 data <- data.frame(
-  x=c(2000, 2004 ,2007,
+  x=c(2000, 2004,
       2011, 2012.5,
       2013, 2015,
       2016.7, 2017.75, 
       2017.75, 2019.5),
-  y=c(0.1, -0.4, -1,
+  y=c(0.1, -0.4,
       0.05, -1,
       1.1, 0.7,
        -0.5, -1.6,
       0.1, 1),
-  text = c("Started \n Homeschool", "Got my First \n Library Card", "Broke my Wrist Sledding",
-"Transferred to \n Public School", "Started a Small Business \n to Pay for School", 
+  text = c("Started \n Homeschool", "Got my First \n Library Card",
+"Transferred to \n Public School", "Started a Small Business \n to Pay for College", 
 "Started \n Community College", "Transferred \n to UW-Oshkosh",
 "Realized Math was Important", "Became the First in my Family \n to Earn a Bachelor's Degree", 
 "Graduated from UW-Oshkosh \n & started MA at UChicago", "Started Public Policy \n PhD at UChicago")
