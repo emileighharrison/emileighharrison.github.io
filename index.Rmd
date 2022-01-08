@@ -6,7 +6,7 @@ title: "About Me"
 
 
 <center>
-<img src="files/2022headshot.jpg" style="width:100%">
+<img src="2022headshot.jpg" style="width:100%">
 </center>
 
 &nbsp;
