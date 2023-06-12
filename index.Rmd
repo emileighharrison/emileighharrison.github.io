@@ -11,11 +11,11 @@ title: "About Me"
 
 &nbsp;
 
-<font size="3">Hello! I'm a PhD student studying Public Policy at the University of Chicago. My research focuses on examining ways to reduce inequality and eliminate barriers to education; particularly for women, first-generation college students, and other historically disadvantaged groups. Currently, I am studying the effects of statewide higher education policies on the outcomes of community college students, as well as changes in gender and racial representation in children's books over time.   
+<font size="3">Hello! I'm a PhD candidate studying Public Policy at the University of Chicago. My research focuses on understanding barriers to education (such as financial constraints or beliefs about academic abilities shaped by representation) and the role that education policy can play in eliminating them. My recent work focuses on applying natural language processing and computer vision tools to measure changes in gender and racial representation in educational content. I also examine the impact of higher education policies on promoting social mobility for students from low-income and historically marginalized backgrounds. My work evaluates a range of policies, such as financial aid program design, articulation agreements, and remedial coursework placement policies.
 
-I am a Pre-Doctoral Fellow at the <a href="https://urbanlabs.uchicago.edu/labs/inclusiveeconomy">Inclusive Economy Lab</a> as well as a Discovery Doctoral Fellow at the <a href="https://datascience.uchicago.edu/research/measuring-messages-about-race-and-gender/">Data Science Institute</a> and a <a href="https://voices.uchicago.edu/coed/coe-fellows-2020/">Committee on Education</a> Fellow at UChicago.  
+I am a <a href="https://naeducation.org/2023-naed-spencer-dissertation-fellows/">2023 National Academy of Education/Spencer Dissertation Fellow</a>, a Discovery Doctoral Fellow at the <a href="https://datascience.uchicago.edu/research/measuring-messages-about-race-and-gender/">Data Science Institute</a>, and a <a href="https://voices.uchicago.edu/coed/coe-fellows-2020/">Committee on Education</a> Fellow at UChicago.  
 
-I am also a junior investigator and founding member of the <a href="https://www.miielab.com/">MiiE Lab</a>.
+I am also a pre-doctoral researcher at the <a href="https://urbanlabs.uchicago.edu/labs/inclusiveeconomy">Inclusive Economy Lab</a> and a junior investigator/founding member of the <a href="https://www.miielab.com/">MiiE Lab</a>.
 </font>
 
 &nbsp;
