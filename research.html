@@ -13,24 +13,38 @@
 
 <title>Research</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -78,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -98,40 +84,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 64px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -159,7 +121,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -171,7 +133,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -181,11 +143,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -197,13 +176,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -211,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -264,7 +235,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -304,7 +275,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -317,44 +288,138 @@ $(document).ready(function () {
 <div id="peer-reviewed-publications" class="section level1">
 <h1><strong>Peer-Reviewed Publications</strong></h1>
 <hr>
-<div id="what-we-teach-about-race-and-gender-representation-in-images-and-text-of-childrens-books-april-2023-nber-wp-29123-forthcoming-in-the-quarterly-journal-of-economics" class="section level4">
-<h4>“What We Teach About Race and Gender: Representation in Images and Text of Children’s Books” <a href="https://bfi.uchicago.edu/wp-content/uploads/2021/04/BFI_WP_2021-44.pdf"> (April 2023, NBER WP 29123, Forthcoming in the Quarterly Journal of Economics)</a></h4>
-<div id="with-anjali-adukia-alex-eble-h.-birali-runesha-and-teodora-szasz" class="section level5">
-<h5><em>with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a>, <a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H. Birali Runesha</a>, and <a href="https://github.com/DoraSzasz">Teodora Szasz</a></em></h5>
+<div
+id="what-we-teach-about-race-and-gender-representation-in-images-and-text-of-childrens-books-august-2023-the-quarterly-journal-of-economics"
+class="section level4">
+<h4>“What We Teach About Race and Gender: Representation in Images and
+Text of Children’s Books” <a href="https://doi.org/10.1093/qje/qjad028">
+(August 2023, the Quarterly Journal of Economics)</a></h4>
+<div
+id="with-anjali-adukia-alex-eble-h.-birali-runesha-and-teodora-szasz"
+class="section level5">
+<h5><em>with
+<a href="https://voices.uchicago.edu/anjali/research/">Anjali
+Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a>,
+<a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H.
+Birali Runesha</a>, and <a href="https://github.com/DoraSzasz">Teodora
+Szasz</a></em></h5>
 </div>
 <div id="abstract" class="section level5">
 <h5><strong>Abstract</strong></h5>
 <a href="https://bfi.uchicago.edu/insight/blog/race-and-gender-in-childrens-books/"><img src="files/interactive_graphs.jpg" align="right"
       style="width:375px;"></a>
 <p>
-<em>Books shape how children learn about society and social norms, in part through the representation of different characters. To better understand the messages children encounter in books, we introduce new machine-led methods for systematically converting images into data. We apply these image tools, along with established text analysis methods, to measure the representation of race, gender, and age in children’s books commonly found in US schools and homes over the last century. We find that books selected to highlight people of color, or females of all races, consistently depict characters with darker skin tones than characters in “mainstream” books, which depict lighter-skinned characters even after conditioning on perceived race. Children are depicted with lighter skin than adults, despite no biological foundation for such a difference. Females are more represented in images than in text, suggesting greater symbolic inclusion in pictures than substantive inclusion in stories. Relative to the US Census, Black and Latinx people are underrepresented; whereas males, particularly White males, are persistently overrepresented. Our data provide a view into the “black box” of education through children’s books in US schools and homes, highlighting what has changed and what has endured over time.</em>
+<em>Books shape how children learn about society and social norms, in
+part through the representation of different characters. To better
+understand the messages children encounter in books, we introduce new
+machine-led methods for systematically converting images into data. We
+apply these image tools, along with established text analysis methods,
+to measure the representation of race, gender, and age in children’s
+books commonly found in US schools and homes over the last century. We
+find that books selected to highlight people of color, or females of all
+races, consistently depict characters with darker skin tones than
+characters in “mainstream” books, which depict lighter-skinned
+characters even after conditioning on perceived race. Children are
+depicted with lighter skin than adults, despite no biological foundation
+for such a difference. Females are more represented in images than in
+text, suggesting greater symbolic inclusion in pictures than substantive
+inclusion in stories. Relative to the US Census, Black and Latinx people
+are underrepresented; whereas males, particularly White males, are
+persistently overrepresented. Our data provide a view into the “black
+box” of education through children’s books in US schools and homes,
+highlighting what has changed and what has endured over time.</em>
 </p>
-<p>[Press: <a href="https://time.com/6284174/book-bans-black-children-publishing/">Time Magazine</a>, <a href="https://www.wsj.com/articles/jack-and-the-bean-counters-a-woke-childrens-story-11619199026">Wall Street Journal</a>, <a href="https://www.slj.com/?detailStory=new-study-looks-race-gender-representation-in-award-winning-childrens-books&utm_source=editorial&utm_medium=SLJTW&utm_term=&utm_content=&utm_campaign=articles">School Library Journal</a>, <a href="https://soundcloud.com/codetogether/scivis-unveils-a-billion-cells-covid-19-invisible-monsters">Code Together</a>, <a href="https://inequalitalks.fireside.fm/19">Inequalitalks</a>, <a href="https://www.future-ed.org/what-we-teach-about-race-and-gender/">FutureEd</a>, <a href="https://www.the74million.org/article/study-ai-uncovers-skin-tone-gap-in-most-beloved-childrens-books/">The 74</a>, Named one of the ten most significant studies of 2021 by George Lucas Foundation’s <a href="https://www.edutopia.org/article/10-most-significant-education-studies-2021">Edutopia</a>]</p>
+<p>[Press:
+<a href="https://time.com/6284174/book-bans-black-children-publishing/">Time
+Magazine</a>,
+<a href="https://www.wsj.com/articles/jack-and-the-bean-counters-a-woke-childrens-story-11619199026">Wall
+Street Journal</a>,
+<a href="https://www.slj.com/?detailStory=new-study-looks-race-gender-representation-in-award-winning-childrens-books&utm_source=editorial&utm_medium=SLJTW&utm_term=&utm_content=&utm_campaign=articles">School
+Library Journal</a>,
+<a href="https://soundcloud.com/codetogether/scivis-unveils-a-billion-cells-covid-19-invisible-monsters">Code
+Together</a>,
+<a href="https://inequalitalks.fireside.fm/19">Inequalitalks</a>,
+<a href="https://www.future-ed.org/what-we-teach-about-race-and-gender/">FutureEd</a>,
+<a href="https://www.the74million.org/article/study-ai-uncovers-skin-tone-gap-in-most-beloved-childrens-books/">The
+74</a>, Named one of the ten most significant studies of 2021 by George
+Lucas Foundation’s
+<a href="https://www.edutopia.org/article/10-most-significant-education-studies-2021">Edutopia</a>]</p>
 <p>     </p>
 </div>
 </div>
-<div id="measuring-representation-of-race-gender-and-age-in-childrens-books-face-detection-and-feature-classification-in-illustrated-images-january-2022-proceedings-of-the-ieeecvf-winter-conference-on-applications-of-computer-vision" class="section level4">
-<h4>“Measuring Representation of Race, Gender, and Age in Children’s Books: Face Detection and Feature Classification in Illustrated Images” <a href="https://openaccess.thecvf.com/content/WACV2022/papers/Szasz_Measuring_Representation_of_Race_Gender_and_Age_in_Childrens_Books_WACV_2022_paper.pdf"> (January 2022, Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision)</a></h4>
-<div id="with-teodora-szasz-ping-jung-liu-ping-chang-lin-h.-birali-runesha-and-anjali-adukia" class="section level5">
-<h5><em>with <a href="https://github.com/DoraSzasz">Teodora Szasz</a>, <a href="https://github.com/howard5758">Ping-Jung Liu</a>, <a href="https://scholar.google.com/citations?user=SYitLx8AAAAJ&hl=en">Ping-Chang Lin</a>, <a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H. Birali Runesha</a>, and <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a></em></h5>
+<div
+id="measuring-representation-of-race-gender-and-age-in-childrens-books-face-detection-and-feature-classification-in-illustrated-images-january-2022-proceedings-of-the-ieeecvf-winter-conference-on-applications-of-computer-vision"
+class="section level4">
+<h4>“Measuring Representation of Race, Gender, and Age in Children’s
+Books: Face Detection and Feature Classification in Illustrated Images”
+<a href="https://openaccess.thecvf.com/content/WACV2022/papers/Szasz_Measuring_Representation_of_Race_Gender_and_Age_in_Childrens_Books_WACV_2022_paper.pdf">
+(January 2022, Proceedings of the IEEE/CVF Winter Conference on
+Applications of Computer Vision)</a></h4>
+<div id="with-teodora-szasz" class="section level5">
+<h5>*with <a href="https://github.com/DoraSzasz">Teodora Szasz</a>,</h5>
+<p><a href="https://github.com/howard5758">Ping-Jung Liu</a>,
+<a href="https://scholar.google.com/citations?user=SYitLx8AAAAJ&hl=en">Ping-Chang
+Lin</a>,
+<a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H.
+Birali Runesha</a>, and
+<a href="https://voices.uchicago.edu/anjali/research/">Anjali
+Adukia</a>*</p>
 </div>
 <div id="abstract-1" class="section level5">
 <h5><strong>Abstract</strong></h5>
 <a href="https://openaccess.thecvf.com/content/WACV2022/papers/Szasz_Measuring_Representation_of_Race_Gender_and_Age_in_Childrens_Books_WACV_2022_paper.pdf"><img src="files/face_detection.png" align="right"style="width:160px;"></a>
 <p>
-<em>Images in children’s books convey messages about society and the roles that people play in it. Understanding these messages requires systematic measurement of who is represented. Computer vision face detection tools can provide such measurements; however, state-of-the-art face detection models were trained with photographs, and 80% of images in children’s books are illustrated; thus existing methods both misclassify and miss classifying many faces. In this paper, we introduce a new approach to analyze images using AI tools, resulting in data that can assess representation of race, gender, and age in both illustrations and photographs in children’s books.</em>
+<em>Images in children’s books convey messages about society and the
+roles that people play in it. Understanding these messages requires
+systematic measurement of who is represented. Computer vision face
+detection tools can provide such measurements; however, state-of-the-art
+face detection models were trained with photographs, and 80% of images
+in children’s books are illustrated; thus existing methods both
+misclassify and miss classifying many faces. In this paper, we introduce
+a new approach to analyze images using AI tools, resulting in data that
+can assess representation of race, gender, and age in both illustrations
+and photographs in children’s books.</em>
 </p>
 <p>     </p>
 </div>
 </div>
-<div id="tales-and-tropes-gender-roles-from-word-embeddings-in-a-century-of-childrens-books-october-2022-proceedings-of-the-28th-international-conference-on-computational-linguistics" class="section level4">
-<h4>“Tales and Tropes: Gender Roles from Word Embeddings in a Century of Children’s Books” <a href="https://aclanthology.org/2022.coling-1.273.pdf"> (October 2022, Proceedings of the 28th International Conference on Computational Linguistics)</a></h4>
-<div id="with-anjali-adukia-patricia-chiril-callista-christ-anjali-das-alex-eble-and-h.-birali-runesha" class="section level5">
-<h5><em>with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="https://scholar.google.com/citations?user=AzsyeyIAAAAJ&hl=en">Patricia Chiril</a>, <a href="https://www.linkedin.com/in/callista-christ/">Callista Christ</a>, <a href="https://www.linkedin.com/in/anjali-das-629869169/">Anjali Das</a>, <a href="www.alexeble.com">Alex Eble</a>, and <a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H. Birali Runesha</a></em></h5>
+<div
+id="tales-and-tropes-gender-roles-from-word-embeddings-in-a-century-of-childrens-books-october-2022-proceedings-of-the-28th-international-conference-on-computational-linguistics"
+class="section level4">
+<h4>“Tales and Tropes: Gender Roles from Word Embeddings in a Century of
+Children’s Books”
+<a href="https://aclanthology.org/2022.coling-1.273.pdf"> (October 2022,
+Proceedings of the 28th International Conference on Computational
+Linguistics)</a></h4>
+<div id="with-anjali-adukia" class="section level5">
+<h5>*with <a href="https://voices.uchicago.edu/anjali/research/">Anjali
+Adukia</a>,</h5>
+<p><a href="https://scholar.google.com/citations?user=AzsyeyIAAAAJ&hl=en">Patricia
+Chiril</a>,
+<a href="https://www.linkedin.com/in/callista-christ/">Callista
+Christ</a>,
+<a href="https://www.linkedin.com/in/anjali-das-629869169/">Anjali
+Das</a>, <a href="www.alexeble.com">Alex Eble</a>, and
+<a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H.
+Birali Runesha</a>*</p>
 </div>
 <div id="abstract-2" class="section level5">
 <h5><strong>Abstract</strong></h5>
-<em>The manner in which gender is portrayed in materials used to teach children conveys messages about people’s roles in society. In this paper, we measure the gendered depiction of central domains of social life in 100 years of highly influential children’s books. We make two main contributions: (1) we find that the portrayal of gender in these books reproduces traditional gender norms in society, and (2) we publish StoryWords 1.0, the first word embeddings trained on such a large body of children’s literature. We find that, relative to males, females are more likely to be represented in relation to their appearance than in relation to their competence; second, they are more likely to be represented in relation to their role in the family than their role in business. Finally, we find that non-binary or gender-fluid individuals are rarely mentioned. Our analysis advances understanding of the different messages contained in content commonly used to teach children, with immediate applications for practice, policy, and research.</em>
+<em>The manner in which gender is portrayed in materials used to teach
+children conveys messages about people’s roles in society. In this
+paper, we measure the gendered depiction of central domains of social
+life in 100 years of highly influential children’s books. We make two
+main contributions: (1) we find that the portrayal of gender in these
+books reproduces traditional gender norms in society, and (2) we publish
+StoryWords 1.0, the first word embeddings trained on such a large body
+of children’s literature. We find that, relative to males, females are
+more likely to be represented in relation to their appearance than in
+relation to their competence; second, they are more likely to be
+represented in relation to their role in the family than their role in
+business. Finally, we find that non-binary or gender-fluid individuals
+are rarely mentioned. Our analysis advances understanding of the
+different messages contained in content commonly used to teach children,
+with immediate applications for practice, policy, and research.</em>
 </p>
 <p>   </p>
 </div>
@@ -363,30 +428,48 @@ $(document).ready(function () {
 <div id="works-in-progress" class="section level1">
 <h1><strong>Works In Progress</strong></h1>
 <hr>
-<div id="category-embeddings-measure-intersectional-portrayals-revision-invited-at-nature" class="section level4">
-<h4>“Category Embeddings Measure Intersectional Portrayals” <em>(Revision Invited at Nature)</em></h4>
+<div
+id="category-embeddings-measure-intersectional-portrayals-revision-invited-at-nature"
+class="section level4">
+<h4>“Category Embeddings Measure Intersectional Portrayals”
+<em>(Revision Invited at Nature)</em></h4>
 <p> </p>
 </div>
-<div id="representation-of-race-and-gender-in-religious-private-school-curriculum" class="section level4">
-<h4>“Representation of Race and Gender in Religious Private School Curriculum”</h4>
+<div
+id="representation-of-race-and-gender-in-religious-private-school-curriculum"
+class="section level4">
+<h4>“Representation of Race and Gender in Religious Private School
+Curriculum”</h4>
 <p> </p>
 </div>
-<div id="skin-color-marriage-markets-and-womens-empowerment-in-bangladesh" class="section level4">
-<h4>“Skin Color, Marriage Markets, and Women’s Empowerment in Bangladesh”</h4>
+<div
+id="skin-color-marriage-markets-and-womens-empowerment-in-bangladesh"
+class="section level4">
+<h4>“Skin Color, Marriage Markets, and Women’s Empowerment in
+Bangladesh”</h4>
 <p> </p>
 </div>
-<div id="heterogeneous-effects-of-merit-based-community-college-scholarships" class="section level4">
-<h4>“Heterogeneous Effects of Merit-Based Community College Scholarships”</h4>
+<div
+id="heterogeneous-effects-of-merit-based-community-college-scholarships"
+class="section level4">
+<h4>“Heterogeneous Effects of Merit-Based Community College
+Scholarships”</h4>
 <p>   </p>
 </div>
 </div>
 <div id="other-publications" class="section level1">
 <h1><strong>Other Publications</strong></h1>
 <hr>
-<div id="what-award-winning-books-teach-children-about-race-and-gender-the-brown-center-chalkboard" class="section level4">
-<h4>“What Award Winning Books Teach Children About Race and Gender” <a href="https://www.brookings.edu/blog/brown-center-chalkboard/2023/06/02/what-award-winning-childrens-books-teach-children-about-race-and-gender/">The Brown Center Chalkboard</a></h4>
+<div
+id="what-award-winning-books-teach-children-about-race-and-gender-the-brown-center-chalkboard"
+class="section level4">
+<h4>“What Award Winning Books Teach Children About Race and Gender”
+<a href="https://www.brookings.edu/blog/brown-center-chalkboard/2023/06/02/what-award-winning-childrens-books-teach-children-about-race-and-gender/">The
+Brown Center Chalkboard</a></h4>
 <div id="with-anjali-adukia-alex-eble" class="section level5">
-<h5><em>with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a></em></h5>
+<h5><em>with
+<a href="https://voices.uchicago.edu/anjali/research/">Anjali
+Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a></em></h5>
 </div>
 </div>
 </div>
@@ -400,7 +483,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -418,7 +501,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
