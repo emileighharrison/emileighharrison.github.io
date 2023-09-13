@@ -56,8 +56,8 @@ ggplot(data, aes(x=x, y=y)) +
   geom_segment(aes(x=x, xend=x, y=start, yend=y), color="grey") +
   geom_point(aes(color=color), size=4) +
   theme_light() +
-  geom_hline(yintercept = 0, size = 0.5, color = "grey") + 
-  geom_hline(yintercept = 0.15, size = 0.5, color = "grey") + 
+  geom_hline(yintercept = 0, linewidth = 0.5, color = "grey") + 
+  geom_hline(yintercept = 0.15, linewidth = 0.5, color = "grey") + 
   theme(
     panel.grid = element_blank(),
     panel.border = element_blank(),
