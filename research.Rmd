@@ -9,7 +9,6 @@ title: "Research"
 
 #### “What We Teach About Race and Gender: Representation in Images and Text of Children’s Books” <a href="https://doi.org/10.1093/qje/qjad028"> (August 2023, the Quarterly Journal of Economics)</a>
 
-      
 ##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a>, <a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H. Birali Runesha</a>, and <a href="https://github.com/DoraSzasz">Teodora Szasz</a>*
 
 ##### **Abstract**
@@ -26,11 +25,7 @@ title: "Research"
 
 #### “Measuring Representation of Race, Gender, and Age in Children's Books: Face Detection and Feature Classification in Illustrated Images” <a href="https://openaccess.thecvf.com/content/WACV2022/papers/Szasz_Measuring_Representation_of_Race_Gender_and_Age_in_Childrens_Books_WACV_2022_paper.pdf"> (January 2022, Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision)</a>
       
-##### *with <a href="https://github.com/DoraSzasz">Teodora Szasz</a>, 
-<a href="https://github.com/howard5758">Ping-Jung Liu</a>, 
-<a href="https://scholar.google.com/citations?user=SYitLx8AAAAJ&hl=en">Ping-Chang Lin</a>, 
-<a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H. Birali Runesha</a>, and 
-<a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>*
+##### *with <a href="https://github.com/DoraSzasz">Teodora Szasz</a>, <a href="https://github.com/howard5758">Ping-Jung Liu</a>, <a href="https://scholar.google.com/citations?user=SYitLx8AAAAJ&hl=en">Ping-Chang Lin</a>, <a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H. Birali Runesha</a>, and <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>*
 
 ##### **Abstract**
 <a href="https://openaccess.thecvf.com/content/WACV2022/papers/Szasz_Measuring_Representation_of_Race_Gender_and_Age_in_Childrens_Books_WACV_2022_paper.pdf"><img src="files/face_detection.png" align="right"style="width:160px;"></a><p>*Images in children's books convey messages about society and the roles that people play in it. Understanding these messages requires systematic measurement of who is represented. Computer vision face detection tools can provide such measurements; however, state-of-the-art face detection models were trained with photographs, and 80% of images in children's books are illustrated; thus existing methods both misclassify and miss classifying many faces. In this paper, we introduce a new approach to analyze images using AI tools, resulting in data that can assess representation of race, gender, and age in both illustrations and photographs in children's books.*</p>
@@ -44,12 +39,7 @@ title: "Research"
 
 #### “Tales and Tropes: Gender Roles from Word Embeddings in a Century of Children’s Books” <a href="https://aclanthology.org/2022.coling-1.273.pdf"> (October 2022, Proceedings of the 28th International Conference on Computational Linguistics)</a>
       
-##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, 
-<a href="https://scholar.google.com/citations?user=AzsyeyIAAAAJ&hl=en">Patricia Chiril</a>, 
-<a href="https://www.linkedin.com/in/callista-christ/">Callista Christ</a>, 
-<a href="https://www.linkedin.com/in/anjali-das-629869169/">Anjali Das</a>, 
-<a href="www.alexeble.com">Alex Eble</a>, and 
-<a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H. Birali Runesha</a>*
+##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="https://scholar.google.com/citations?user=AzsyeyIAAAAJ&hl=en">Patricia Chiril</a>, <a href="https://www.linkedin.com/in/callista-christ/">Callista Christ</a>, <a href="https://www.linkedin.com/in/anjali-das-629869169/">Anjali Das</a>, <a href="www.alexeble.com">Alex Eble</a>, and <a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H. Birali Runesha</a>*
 
 ##### **Abstract**
 *The manner in which gender is portrayed in materials used to teach children conveys messages about people’s roles in society. In this paper, we measure the gendered depiction of central domains of social life in 100 years of highly influential children’s books. We make two main contributions: (1) we find that the portrayal of gender in these books reproduces traditional gender norms in society, and (2) we publish StoryWords 1.0, the first word embeddings trained on such a large body of children's literature. We find that, relative to males, females are more likely to be represented in relation to their appearance than in relation to their competence; second, they are more likely to be represented in relation to their role in the family than their role in business. Finally, we find that non-binary or gender-fluid individuals are rarely mentioned. Our analysis advances understanding of the different messages contained in content commonly used to teach children, with immediate applications for practice, policy, and research.*</p>
