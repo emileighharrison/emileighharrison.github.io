@@ -11,31 +11,40 @@
 
 
 
-<title>problemsets.utf8</title>
+<title>problemsets.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<link href="site_libs/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet" />
-<script src="site_libs/wordcloud2-0.0.1/wordcloud2-all.js"></script>
-<script src="site_libs/wordcloud2-0.0.1/hover.js"></script>
-<script src="site_libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -48,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -83,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -103,40 +84,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 64px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -164,7 +121,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -176,7 +133,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -186,11 +143,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -202,13 +176,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -216,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -269,7 +235,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -283,9 +249,6 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="research.html">Research</a>
-</li>
-<li>
-  <a href="visualizations.html">Visualizations</a>
 </li>
 <li>
   <a href="files/emileigh_harrison_cv.pdf">CV</a>
@@ -309,7 +272,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -320,12 +283,18 @@ $(document).ready(function () {
 <p> </p>
 <div id="a-year-in-the-life-of-a-first-year-phd" class="section level2">
 <h2>A Year in the Life of a First Year PhD</h2>
-<p><font size="2"> The following wordcloud is a visualization of every single problemset I poured over while completing the Harris PhD core curriculum. Specifically, these are the problemsets I worked through while studying Micreconomics, Econometrics, and Game Theory.</p>
-<p>If you hover over the wordcloud below, you can see exactly how many times I typed a specific word into LaTex during the first year of my program. For example, I typed the word “function” 188 times!</p>
-<p>I was a little suprised not to see concavity featured more prominently considering how much time I spent checking second order conditions. </font></p>
+<p><font size="2"> The following wordcloud is a visualization of every
+single problemset I poured over while completing the Harris PhD core
+curriculum. Specifically, these are the problemsets I worked through
+while studying Micreconomics, Econometrics, and Game Theory.</p>
+<p>If you hover over the wordcloud below, you can see exactly how many
+times I typed a specific word into LaTex during the first year of my
+program. For example, I typed the word “function” 188 times!</p>
+<p>I was a little surprised not to see concavity featured more
+prominently considering how much time I spent checking second order
+conditions. </font></p>
 <center>
-<div id="htmlwidget-1c975e2099b290371eff" style="width:672px;height:480px;" class="wordcloud2 html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1c975e2099b290371eff">{"x":{"word":["lagrangian","consumer’s","problem","price","equals","optimality","constraints","shown","solve","will","need","consider","cases","consumer","case","must","equal","zero","simplify","since","implies","solving","budget","constraint","conclude","whenever","ppmc","group","members","december","exercise","goods","across","consumers","utility","function","logt","logq","amount","social","endowment","units","suppose","preferences","represented","welfare","following","form","weighted","weight","greater","optimal","endowments","examine","find","allocation","know","functions","undefined","also","locally","nonsatiated","increasing","lastly","concave","focs","necessary","sufficient","system","equations","pareto","allocations","economy","assume","good","walrasian","equilibrium","first","demand","note","prices","policy","rather","bundle","assigned","efficient","willing","figure","list","well","describe","hint","every","consumption","trade","theorem","choice","least","choices","makes","second","allocated","among","three","maximize","individual","respectively","total","identical","either","positive","binding","solution","order","setting","derivative","respect","equation","substitute","value","original","words","characterize","found","maximizing","equivalent","strictly","upon","highest","divide","look","imply","true","values","relationship","elements","determine","means","inequality","never","similar","exists","similarly","part","ratio","make","contradiction","take","example","question","different","women","show","benefit","result","receive","preferred","woman","want","scenario","propose","choose","favorite","accept","stable","match","neither","round","prove","unique","denote","given","prefer","less","outcome","follows","assuming","reject","already","last","thus","number","shows","change","agent","agents","position","side","using","results","used","instead","give","times","recall","production","hulac","peas","workers","stay","away","work","unit","capitalist","profit","wage","indifferent","purchase","addition","just","firm","even","define","holds","proof","contrary","individuals","time","though","finally","house","think","finding","step","possible","running","maximization","derive","firstorder","optimum","foc’s","optimization","equality","quantity","fact","inverse","lecture","valorem","expression","market","increase","showed","received","start","next","sides","specific","terms","compare","previous","looking","firms","level","revenue","whether","write","marginal","costs","constant","decreasing","increases","higher","introduced","output","cost","decreases","class","principle","perfect","discrimination","still","seller","linear","buyer","income","conditions","interior","observe","bind","rule","normal","explain","monotonic","much","high","without","rewrite","sets","type","sell","assumptions","ticket","combination","model","distortion","quality","traveler","incentive","lower","unrestricted","mean","however","types","difference","condition","rearrange","include","rationality","variables","appear","weakly","slack","satisfy","satisfies","<U+2202>uqz","left","hand","convex","slope","defined","assumption","nash","factor","curve","approaches","alternative","term","full","information","lowest","symmetric","best","response","game","produce","definition","space","conditional","point","maximum","decrease","public","provided","provide","substituting","simplifies","free","mechanism","tion","payments","larger","calculate","dominant","strategy","report","payoff","wants","payoffs","negative","pivotal","playing","players","distributed","objective","player","hold","selection","uniformly","interval","graph","always","middle","population","education","effect","bayesian","offer","probability","separating","beliefs","better","equilibria","profitable","earn","expected","affect","believe","earnings","person","identify","rate","denominator","numerator","trades","interpret","interpreted","meaning","envy","else","vector","transformation","complete","transitive","mixed","independence","treat","rational","loss","random","variable","quadratic","decision","squared","large","clearly","matrix","otherwise","period","answer","consistent","table","check","many","parameter","distribution","vary","chooses","states","apply","property","right","third","line","analysis","problems","estimates","estimate","effects","covariance","squares","estimator","regressors","fixed","within","groups","unbiased","observations","variance","dependent","heteroskedasticity","bias","instruments","stage","endogenous","variation","written","matrices","valid","coefficients","predicted","contains","estimating","independent","limit","treatment","average","treated","covariates","assignment","untreated","control","monotonicity","regressor","deviation","idempotent","correlated","instrument","correlation","coefficient","data","conventional","default","clustered","sizes","inflation","compared","size","sample","smaller","errors","observation","uncorrelated","standard","regression","black","higrade","obtain","robust","panel","based","test","error","experience","candidate","regress","additional","quarterly","holding","statistically","confidence","command","hypothesis","approximately","statistic","estimated","freedom","null","compute","residuals","density","orthogonal","likelihood","likely","play","students","observed","prior","posterior","samples","credible","median","probabilities","late","briefly","compliers","complier","defier","defiers","observable","randomization","status","containing","randomly","option","minimize","households","column","household","added","birth","year","school","takers","taker","evidence","dataset","asymptotic","regressions","housing","tract","site","state","dummy","tracts","rsquared","sites","score","scores","close","cutoff","yrsocc","bedrms","parentheses","diploma","bins","specification","specifications","significant","primary","don’t","matching","predetermined","vard","varxi","covdi","covd","covxi","covyi","propensity","pxyi","maternal","smoking","infant","missing","tobacco","drink","birthweight","pregnancy","grams","years","mother","method","observing","bootstrapped","weak","belt","traffic","fatalities","capita","seatbelt","seat","college","inches","interstate","speed","moment","choosing","<U+03B8>^gmm","synthetic","preperiod","grade","prediction","schooling","move","disney","signal","actions","observes","action","grab","”grab”","plays","assistant","professor","department","chair","tenure","effort","pooling","assessment","strategies","sequential","sequentially","hungry","”squawk”","”quiet”","defendant","plaintiff","settlement","sender","principal","principal’s","lizard","release","election","wisconsin","scott","walker","barrett","rights","political","estate"],"freq":[18,26,137,91,31,27,75,119,90,511,99,72,21,54,147,78,118,57,48,210,79,37,38,84,28,12,11,102,12,33,106,15,9,38,136,188,10,10,18,42,19,20,81,47,12,29,101,39,11,29,63,85,12,18,226,40,99,37,12,66,11,10,49,33,56,20,16,24,16,34,42,17,13,100,88,12,150,171,34,48,27,11,9,14,29,32,15,24,21,14,9,10,14,18,9,25,12,33,9,11,39,12,10,33,17,36,11,32,22,38,43,35,38,74,14,22,25,94,29,120,20,47,9,35,11,15,67,9,10,13,10,28,43,92,10,9,13,60,16,20,20,28,31,65,13,20,10,28,33,32,46,45,169,11,20,16,16,13,68,23,13,41,24,9,24,23,17,15,27,17,16,85,12,37,21,29,40,30,9,19,35,83,14,43,77,19,10,49,182,30,14,32,20,11,23,10,19,18,27,10,9,15,13,10,67,39,27,11,9,14,38,23,11,16,34,11,31,35,14,12,9,16,9,9,24,16,26,14,12,12,12,10,18,11,40,13,14,9,23,16,43,11,11,21,62,13,21,42,27,10,14,16,78,10,46,44,39,15,72,17,17,45,15,24,23,11,17,12,14,10,26,25,13,21,15,38,11,21,10,12,10,41,9,20,59,21,49,11,116,20,34,31,13,143,12,23,9,10,33,13,66,47,25,34,49,11,17,20,119,13,22,9,16,16,14,16,11,40,10,17,51,33,25,14,14,9,34,9,32,9,22,40,32,53,11,12,16,31,30,9,18,42,19,20,10,25,19,10,11,13,31,35,13,112,16,76,9,20,27,12,31,16,17,11,174,30,10,9,25,25,29,18,15,73,86,11,9,82,27,57,18,10,10,12,95,16,16,39,14,9,17,15,16,14,22,9,10,13,12,28,12,10,12,11,15,22,15,9,36,102,9,16,17,19,9,65,14,12,11,15,51,24,13,13,60,14,20,33,9,11,16,18,9,9,9,25,81,61,29,9,83,12,27,41,60,21,51,128,33,9,22,14,19,13,26,16,10,13,23,21,11,13,35,20,128,86,27,45,14,9,50,12,9,12,9,25,31,33,75,81,14,11,30,11,17,12,27,46,13,119,17,16,153,96,10,10,9,22,14,19,56,67,18,11,18,18,9,17,19,15,15,25,18,30,19,9,29,20,51,16,10,29,14,15,12,9,19,40,9,9,23,10,22,10,29,17,16,15,10,13,12,12,19,12,12,10,20,9,13,25,27,23,11,18,9,9,10,14,28,16,24,125,30,19,12,19,49,18,9,22,20,24,25,11,13,17,10,10,34,11,9,19,10,12,40,10,9,11,29,17,14,29,12,27,12,10,16,19,10,30,14,13,9,21,11,15,12,25,25,24,13,16,12,10,11,21,17,10,20,9,11,13,14,16,10,12,16,19,14,13,14,10,13,13,18,10,19,35,12,17,16,18,14,9,9,13,15,13,12,16,18,14,10,11,18,9,14,17,10,10,10,14],"fontFamily":"Segoe UI","fontWeight":"bold","color":["#E0BE79","#766487","#92996D","#D1B17A","#497862","#B5AA72","#748C68","#7D6886","#497862","#A6A370","#497862","#497862","#728B68","#8A7584","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#917286","#497862","#497862","#497862","#497862","#766487","#ABA570","#796586","#7A6686","#E0BE79","#766487","#497862","#E0BE79","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#6A8767","#497862","#4F7B63","#497862","#8B6F86","#497862","#E0BE79","#497862","#497862","#497862","#497862","#766487","#806D85","#846B86","#497862","#497862","#497862","#CAB475","#836F85","#517B63","#497862","#DAB979","#497862","#C5A77C","#497862","#A2A16F","#766487","#8C7784","#857184","#497862","#766487","#497862","#497862","#497862","#497862","#CDAE7B","#E0BE79","#E0BE79","#766487","#497862","#497862","#E0BE79","#766487","#497862","#5B8064","#497862","#497862","#806A86","#C0AF74","#997786","#497862","#497862","#786586","#497862","#497862","#E0BE79","#927386","#497862","#766487","#86946B","#E0BE79","#497862","#766487","#497862","#497862","#497862","#497862","#497862","#497862","#E0BE79","#988182","#497862","#497862","#497862","#497862","#497862","#9A7886","#8A6F86","#497862","#E0BE79","#497862","#497862","#497862","#766487","#497862","#766487","#A88E80","#867284","#497862","#497862","#768C68","#766487","#497862","#497862","#786686","#497862","#E0BE79","#497862","#497862","#497862","#597F64","#847085","#D0B07B","#E0BE79","#497862","#8E986C","#497862","#497862","#B1A871","#E0BE79","#497862","#C2B074","#8F7186","#497862","#497862","#BC9F7D","#497862","#4C7962","#497862","#766487","#497862","#497862","#497862","#497862","#497862","#A7A470","#497862","#957F82","#497862","#E0BE79","#907286","#766487","#497862","#5E8265","#497862","#766487","#9A7786","#E0BE79","#497862","#497862","#497862","#766487","#497862","#766487","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#9C7986","#E0BE79","#CFB676","#766487","#E0BE79","#978082","#497862","#497862","#7C6986","#497862","#8E7186","#DEBD78","#7F6986","#497862","#497862","#497862","#766487","#E0BE79","#8F7286","#497862","#497862","#497862","#E0BE79","#497862","#766487","#497862","#497862","#8D7883","#786586","#766487","#E0BE79","#766487","#DEBC79","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#776486","#766486","#497862","#E0BE79","#497862","#497862","#6D8967","#806986","#766487","#796686","#497862","#B4987E","#BAAC73","#E0BE79","#776486","#E0BE79","#B8AB72","#E0BE79","#E0BE79","#497862","#B6AA72","#497862","#497862","#DDBC78","#766487","#497862","#497862","#497862","#497862","#497862","#BA9D7E","#497862","#D7B67A","#766487","#497862","#497862","#497862","#766487","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#E0BE79","#497862","#497862","#497862","#497862","#497862","#8A6F86","#497862","#497862","#497862","#E0BE79","#497862","#927386","#766487","#856C86","#497862","#497862","#628365","#497862","#8C7086","#497862","#497862","#497862","#497862","#497862","#497862","#E0BE79","#E0BE79","#6F8967","#497862","#E0BE79","#497862","#766487","#497862","#7E906A","#497862","#E0BE79","#497862","#497862","#497862","#497862","#D6B57A","#D2B27A","#497862","#E0BE79","#497862","#497862","#497862","#497862","#7C8F69","#E0BE79","#497862","#DBBA79","#497862","#497862","#497862","#776586","#497862","#497862","#497862","#497862","#CAAB7B","#7D6A86","#497862","#937486","#497862","#766487","#7B6786","#497862","#7E6886","#497862","#E0BE79","#497862","#497862","#E0BE79","#497862","#497862","#766486","#497862","#CCAD7B","#E0BE79","#E0BE79","#608265","#497862","#497862","#766487","#E0BE79","#766487","#497862","#856C86","#E0BE79","#E0BE79","#7D6886","#E0BE79","#497862","#BDAE73","#497862","#537C63","#497862","#7E6B85","#D6B977","#927386","#497862","#E0BE79","#678566","#497862","#766487","#497862","#497862","#766487","#497862","#796786","#497862","#497862","#497862","#497862","#497862","#497862","#E0BE79","#497862","#766487","#497862","#497862","#877384","#E0BE79","#497862","#497862","#9D7986","#497862","#766487","#497862","#AA9080","#497862","#497862","#A08881","#766487","#896E86","#497862","#E0BE79","#497862","#497862","#497862","#9A9D6E","#766487","#9B8482","#D3B37A","#967586","#497862","#CCB476","#B5997E","#497862","#497862","#4E7A62","#497862","#A28A81","#8F7286","#497862","#497862","#497862","#8B6F86","#497862","#497862","#E0BE79","#497862","#497862","#6C8867","#497862","#497862","#989D6E","#C4A67C","#497862","#497862","#B79B7E","#497862","#497862","#A58B80","#497862","#497862","#497862","#816A86","#497862","#AD927F","#497862","#497862","#766487","#497862","#638466","#497862","#E0BE79","#947486","#497862","#497862","#497862","#967586","#497862","#497862","#497862","#497862","#497862","#836B86","#497862","#497862","#497862","#766487","#497862","#497862","#8D7086","#766487","#497862","#DBBB78","#497862","#497862","#E0BE79","#766487","#E0BE79","#E0BE79","#C8A97C","#766487","#766487","#979C6D","#497862","#497862","#939A6D","#497862","#497862","#497862","#497862","#497862","#497862","#766487","#947486","#497862","#806986","#497862","#846C86","#766487","#D8BA77","#497862","#497862","#917386","#9D7986","#497862","#497862","#497862","#E0BE79","#497862","#947E82","#497862","#497862","#497862","#9C8581","#497862","#497862","#816A86","#497862","#836B86","#766487","#497862","#497862","#497862","#E0BE79","#497862","#497862","#766487","#A98F80","#E0BE79","#497862","#886E86","#497862","#497862","#C6A87C","#766487","#866D86","#9FA06F","#D9B879","#497862","#658566","#497862","#C2A47C","#497862","#497862","#497862","#497862","#967686","#497862","#DFBD79","#766487","#E0BE79","#497862","#497862","#567E64","#7C6786","#AF947F","#497862","#766487","#C5B175","#987786","#5D8165","#497862","#826A86","#497862","#497862","#497862","#766487","#B0957F","#E0BE79","#A68C80","#497862","#C9B375","#497862","#497862","#A38B80","#798E69","#E0BE79","#497862","#497862","#E0BE79","#497862","#766487","#497862","#83936A","#E0BE79","#E0BE79","#497862","#497862","#497862","#826A86","#497862","#497862","#C1A37D","#D4B877","#BB9E7D","#497862","#D4B47A","#497862","#497862","#497862","#E0BE79","#497862","#497862","#D3B877","#AC917F","#497862","#AEA771","#497862","#497862","#497862","#497862","#9E8681","#497862","#497862","#959B6D","#C9AA7B","#497862","#C3A57C","#497862","#E0BE79","#927C83","#497862","#766487","#497862","#497862","#497862","#497862","#766487","#B3977E","#766487","#497862","#497862","#AE937F","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#E0BE79","#497862","#497862","#497862","#907A83","#497862","#497862","#497862","#937D83","#497862","#90996C","#E0BE79","#A9A470","#796586","#497862","#766487","#766487","#497862","#917B83","#497862","#497862","#81926A","#766487","#497862","#497862","#497862","#E0BE79","#7B6686","#E0BE79","#497862","#497862","#497862","#497862","#497862","#B1967F","#E0BE79","#977686","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#766487","#766487","#766486","#497862","#497862","#497862","#497862","#896E86","#88956B","#89966B","#497862","#E0BE79","#497862","#497862","#ACA671","#497862","#C4B174","#826E85","#497862","#497862","#497862","#C7B275","#497862","#497862","#497862","#497862","#8E7983","#497862","#BBAD73","#E0BE79","#9F8781","#497862","#497862","#497862","#497862","#497862","#876D86","#497862","#497862","#497862","#E0BE79","#497862","#497862","#E0BE79","#497862","#E0BE79","#766487","#A1A06F","#CEB576","#497862","#718A68","#497862","#766487","#8C7086","#E0BE79","#E0BE79","#E0BE79","#977686","#E0BE79","#497862","#497862","#497862","#497862","#A78D80","#497862","#497862","#497862","#497862","#766487","#9A7886","#766487","#497862","#497862","#497862","#778D69","#497862","#8B966C","#497862","#766487","#497862","#497862","#766487","#497862","#497862","#80916A","#766487","#497862","#766487","#8B7684","#497862","#E0BE79","#497862","#766487","#497862","#497862","#497862","#497862","#497862","#497862","#B3A972","#497862","#497862","#997786","#497862","#497862","#766487","#587F64","#8D7186","#497862","#497862","#CBAC7B","#E0BE79","#766487","#497862","#866C86","#766487","#E0BE79","#7F6986","#766487","#A4A26F","#497862","#957586","#497862","#497862","#497862","#766487","#497862","#497862","#497862","#497862","#497862","#9E7A86","#B0A771","#497862","#E0BE79","#497862","#497862","#497862","#497862","#497862","#497862","#897484","#766487","#7B8F69","#497862","#CFAF7B","#9A8382","#497862","#7C6786","#9C7986","#766487","#D8B779","#497862","#497862","#497862","#7B6886","#497862","#766487","#497862","#497862","#D1B776","#497862","#9C9E6E","#497862","#497862","#E0BE79","#DDBB79","#876D86","#497862","#497862","#B89C7E","#876D86","#766487","#497862","#497862","#497862","#9D9F6E","#766487","#497862","#497862","#A18981","#497862","#9B7886","#497862","#907286","#497862","#7C6786","#9B7886","#497862","#766487","#766487","#886E86","#497862","#E0BE79","#8E7186","#766487","#497862","#497862","#497862","#BFAE74","#497862","#497862","#E0BE79","#8D976C","#497862","#766487","#497862","#497862","#766487","#497862","#E0BE79","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#BFA27D","#4A7862","#BEA17D","#766487","#766487","#846B86","#497862","#497862","#497862","#497862","#987686","#E0BE79","#7E6886","#497862","#937486","#E0BE79","#766487","#E0BE79","#766487","#957586","#497862","#497862","#766487","#497862","#497862","#497862","#497862","#8B7086","#497862","#497862","#BDA07D","#497862","#497862","#D9BB78","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#7A6686","#766487","#998282","#688666","#E0BE79","#497862","#497862","#7F6C85","#497862","#497862","#497862","#497862","#497862","#497862","#497862","#E0BE79","#B69A7E","#497862","#497862","#497862","#497862","#E0BE79","#497862","#497862","#547D63","#497862","#497862","#497862","#E0BE79","#497862","#497862","#497862","#497862","#85936B","#497862"],"minSize":0,"weightFactor":0.352250489236791,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<pre><code>## Warning: package &#39;pdftools&#39; was built under R version 4.3.1</code></pre>
 </center>
 </div>
 
@@ -338,7 +307,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -356,7 +325,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

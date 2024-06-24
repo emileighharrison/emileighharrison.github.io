@@ -10,12 +10,11 @@ title: " "
 
 If you hover over the wordcloud below, you can see exactly how many times I typed a specific word into LaTex during the first year of my program. For example, I typed the word "function" 188 times!  
 
-I was a little suprised not to see concavity featured more prominently considering how much time I spent checking second order conditions.
+I was a little surprised not to see concavity featured more prominently considering how much time I spent checking second order conditions.
 </font>
 
 <center>
 ```{r warnings=FALSE, message=FALSE, echo=FALSE, fig.align="center"}
-counts <- read.csv("files/words.csv")
 ### ====================================
 ### Create Wordcloud
 ### ====================================
@@ -27,13 +26,16 @@ library(magrittr)
 library(wordcloud2)
 library("htmlwidgets")
 library(webshot)
+library(readr)
 webshot::install_phantomjs()
+
+counts <- read_csv("files/words.csv")
 
 set.seed(124)
 fun_color_range <- colorRampPalette(c(rep("#9e7a86",1),rep("#766487",2),rep("#e0be79",2),rep("#497862",7)))
 my_colors <- fun_color_range(1000) %>% sample()
 
-wordcloud2(data=subset(counts, freq > 8)[,c("word","freq")], color = my_colors, shape="circle")
+#wordcloud2(data=subset(counts, freq > 8)[,c("word","freq")], color = my_colors, shape="circle")
 
 ```
 </center>

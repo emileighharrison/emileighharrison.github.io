@@ -11,11 +11,13 @@ title: "About Me"
 
 &nbsp;
 
-<font size="3">Hello! I'm a PhD candidate studying Public Policy at the University of Chicago. My research focuses on understanding barriers to education (such as financial constraints or beliefs about academic abilities shaped by representation) and the role that education policy can play in eliminating them. My recent work focuses on applying natural language processing and computer vision tools to measure changes in gender and racial representation in educational content. I also examine the impact of higher education policies on promoting social mobility for students from low-income and historically marginalized backgrounds. My work evaluates a range of policies, such as financial aid program design, articulation agreements, and remedial coursework placement policies.
+<font size="3">Hello! I'm a Postdoctoral Scholar at the University of Chicago Harris School of Public Policy <a href="https://urbanlabs.uchicago.edu/labs/inclusiveeconomy">Inclusive Economy Lab</a> and a Principal Investigator at <a href="https://www.miielab.com/">MiiE Lab</a>. My research focuses on understanding barriers to education (such as financial constraints or beliefs about academic abilities shaped by representation) and the role that education policy can play in eliminating them. My recent work focuses on applying natural language processing and computer vision tools to measure how different topics (such as evolution or religion) and different groups (such as women or LGBTQIA+ individuals) have been portrayed within education materials over time. I also examine the impact of higher education policies on social mobility for students from low-income backgrounds. My work evaluates a range of policies, such as free community college, financial aid program design, articulation agreements, and remedial coursework placement policies.
 
-I am a <a href="https://naeducation.org/2023-naed-spencer-dissertation-fellows/">2023 National Academy of Education/Spencer Foundation Dissertation Fellow</a>, a Discovery Doctoral Fellow at the <a href="https://datascience.uchicago.edu/research/measuring-messages-about-race-and-gender/">Data Science Institute</a>, and a <a href="https://voices.uchicago.edu/coed/coe-fellows-2020/">Committee on Education</a> Fellow at UChicago.  
+I received my PhD from the University of Chicago Harris School of Public Policy where I also completed the Econometrics and Labor Economics fields in the Economics Department.
 
-I am also a pre-doctoral researcher at the <a href="https://urbanlabs.uchicago.edu/labs/inclusiveeconomy">Inclusive Economy Lab</a> and a junior investigator/founding member of the <a href="https://www.miielab.com/">MiiE Lab</a>.
+I have held multiple prestigious fellowships, including being a 2023 National Academy of Education/Spencer Foundation Dissertation Fellow, a Discovery Doctoral Fellow at the Data Science Institute and a Committee on Education Fellow at the University of Chicago. 
+
+I'm a first generation college student and a community college alumna who is dedicated to mentoring students with similar backgrounds. I was the inaugural Co-Chair of the First Generation Education Scholars AEFP Community Group along with Susan Dynarski.
 </font>
 
 &nbsp;
@@ -33,17 +35,20 @@ data <- data.frame(
       2011, 2012.5,
       2013, 2015,
       2016.7, 2017.75, 
-      2017.75, 2019.5),
+      2017.75, 2019.75,
+      2023.5, 2024.5),
   y=c(0.1, -0.4,
       0.05, -1,
       1.1, 0.7,
        -0.5, -1.6,
-      0.1, 1),
+      0.1, 1,
+      -0.5, 0.75),
   text = c("Started \n Homeschool", "Got my First \n Library Card",
 "Transferred to \n Public School", "Started a Small Business \n to Pay for College", 
 "Started \n Community College", "Transferred \n to UW-Oshkosh",
 "Realized Math was Important", "Became the First in my Family \n to Earn a Bachelor's Degree", 
-"Graduated from UW-Oshkosh \n & started MA at UChicago", "Started Public Policy \n PhD at UChicago")
+"Graduated with BBA\nfrom UW-Oshkosh", "Started PhD Program\nat UChicago",
+"First Econ Publication\n(Published in QJE)", "Earned PhD")
 )
 
 data$color <- ifelse(data$y>0,"academic","personal") %>% as.factor()
@@ -71,12 +76,13 @@ ggplot(data, aes(x=x, y=y)) +
   xlab("") +
   ylab("") +
   ylim(-2,2) + 
-  xlim(1999,2022) + 
+  xlim(1999,2025) + 
   geom_text(aes(label = text, y=shift), size = 2.5, color="grey20") +
   annotate("text", x = 2000, y = 0.08, label = "2000", color="grey60", size=3) + 
     annotate("text", x = 2005, y = 0.08, label = "2005", color="grey60", size=3) + 
     annotate("text", x = 2010, y = 0.08, label = "2010", color="grey60", size=3) + 
     annotate("text", x = 2015, y = 0.08, label = "2015", color="grey60", size=3) + 
-    annotate("text", x = 2020, y = 0.08, label = "2020", color="grey60", size=3) 
+    annotate("text", x = 2020, y = 0.08, label = "2020", color="grey60", size=3) + 
+    annotate("text", x = 2025, y = 0.08, label = "2025", color="grey60", size=3) 
 ```
 
