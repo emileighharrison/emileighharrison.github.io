@@ -7,7 +7,7 @@ title: "Research"
 #  **Peer-Reviewed Publications** 
 <hr>
 
-#### “What We Teach About Race and Gender: Representation in Images and Text of Children’s Books” <a href="https://doi.org/10.1093/qje/qjad028"> (August 2023, the Quarterly Journal of Economics)</a>
+#### “What We Teach About Race and Gender: Representation in Images and Text of Children’s Books” <a href="https://doi.org/10.1093/qje/qjad028"> (2023, the Quarterly Journal of Economics)</a>
 
 ##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a>, <a href="https://scholar.google.com/citations?user=yS83xSkAAAAJ&hl=en">H. Birali Runesha</a>, and <a href="https://github.com/DoraSzasz">Teodora Szasz</a>*
 
@@ -56,7 +56,7 @@ title: "Research"
 
 &nbsp; 
   
-#### “Representation of Race and Gender in Religious Private School Curriculum”
+#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks”
  
 &nbsp;  
   
@@ -65,8 +65,7 @@ title: "Research"
 
 &nbsp;  
 
-#### “Heterogeneous Effects of Merit-Based Community College Scholarships”
-
+#### “The Effects of Merit-Based Free Community College”
 
 &nbsp;
 &nbsp;
