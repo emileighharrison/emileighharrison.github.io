@@ -11,13 +11,15 @@ title: "About Me"
 
 &nbsp;
 
-<font size="3">Hello! I'm a Postdoctoral Scholar at the University of Chicago Harris School of Public Policy <a href="https://urbanlabs.uchicago.edu/labs/inclusiveeconomy">Inclusive Economy Lab</a> and a Principal Investigator at <a href="https://www.miielab.com/">MiiE Lab</a>. My research focuses on understanding barriers to education (such as financial constraints or beliefs about academic abilities shaped by representation) and the role that education policy can play in eliminating them. My recent work focuses on applying natural language processing and computer vision tools to measure how different topics (such as evolution or religion) and different groups (such as women or LGBTQIA+ individuals) have been portrayed within education materials over time. I also examine the impact of higher education policies on social mobility for students from low-income backgrounds. My work evaluates a range of policies, such as free community college, financial aid program design, articulation agreements, and remedial coursework placement policies.
+<font size="3">Hello! I'm a Postdoctoral Scholar at the University of Chicago Harris School of Public Policy <a href="https://urbanlabs.uchicago.edu/labs/inclusiveeconomy">Inclusive Economy Lab</a> and a Principal Investigator at <a href="https://www.miielab.com/">MiiE Lab</a>. In my research, I combine classical causal inference methods with innovative applications of computational social science tools to answer policy relevant questions. I received my PhD from the University of Chicago Harris School of Public Policy where I also completed the Econometrics and Labor Economics fields in the Economics Department.  
 
-I received my PhD from the University of Chicago Harris School of Public Policy where I also completed the Econometrics and Labor Economics fields in the Economics Department.
+My recent work applies natural language processing and computer vision tools to measure how different topics (such as evolution or religion) and different groups (such as women or LGBTQIA+ individuals) have been portrayed within education materials over time.  
+
+I also examine the impact of higher education policies on social mobility for students from low-income backgrounds. My work evaluates a range of policies, such as free community college, financial aid program design, articulation agreements, and remedial coursework placement policies.  
 
 I have held multiple prestigious fellowships, including being a 2023 National Academy of Education/Spencer Foundation Dissertation Fellow, a Discovery Doctoral Fellow at the Data Science Institute and a Committee on Education Fellow at the University of Chicago. 
 
-I'm a first generation college student and a community college alumna who is dedicated to mentoring students with similar backgrounds. I was the inaugural Co-Chair of the First Generation Education Scholars AEFP Community Group along with Susan Dynarski.
+I'm a first generation college student and a community college alumna who is committed to mentoring students with similar backgrounds. I was the inaugural Co-Chair of the First Generation Education Scholars AEFP Community Group along with Susan Dynarski.
 </font>
 
 &nbsp;
