@@ -1,7 +1,20 @@
 ---
-title: " "
+title: "About Me"
 ---
-
+<style>
+  .two-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    flex: 50%; /* Adjusts the width of each column to 50% of the container */
+    padding: 10px; /* Adds some padding around the content */
+  }
+  .column img {
+    width: 100%; /* Makes images responsive to the column width */
+    height: auto; /* Maintains aspect ratio */
+  }
+</style>
 <br>  
 <br>  
 
@@ -14,7 +27,7 @@ title: " "
 
 ##### **Abstract**
 <a href="https://academic.oup.com/qje/advance-article/doi/10.1093/qje/qjad028/7247000"><img src="files/qje_graph.png" align="right"
-      style="width:400px;"></a><p>*Books shape how children learn about society and social norms, in part through the representation of different characters. To better understand the messages children encounter in books, we introduce new machine-led methods for systematically converting images into data. We apply these image tools, along with established text analysis methods, to measure the representation of race, gender, and age in children’s books commonly found in US schools and homes over the last century. We find that books selected to highlight people of color, or females of all races, consistently depict characters with darker skin tones than characters in "mainstream" books, which depict lighter-skinned characters even after conditioning on perceived race. Children are depicted with lighter skin than adults, despite no biological foundation for such a difference. Females are more represented in images than in text, suggesting greater symbolic inclusion in pictures than substantive inclusion in stories. Relative to the US Census, Black and Latinx people are underrepresented; whereas males, particularly White males, are persistently overrepresented. Our data provide a view into the "black box" of education through children’s books in US schools and homes, highlighting what has changed and what has endured over time.*</p>
+      style="width:380px;"></a><p>*Books shape how children learn about society and social norms, in part through the representation of different characters. To better understand the messages children encounter in books, we introduce new machine-led methods for systematically converting images into data. We apply these image tools, along with established text analysis methods, to measure the representation of race, gender, and age in children’s books commonly found in US schools and homes over the last century. We find that books selected to highlight people of color, or females of all races, consistently depict characters with darker skin tones than characters in "mainstream" books, which depict lighter-skinned characters even after conditioning on perceived race. Children are depicted with lighter skin than adults, despite no biological foundation for such a difference. Females are more represented in images than in text, suggesting greater symbolic inclusion in pictures than substantive inclusion in stories. Relative to the US Census, Black and Latinx people are underrepresented; whereas males, particularly White males, are persistently overrepresented. Our data provide a view into the "black box" of education through children’s books in US schools and homes, highlighting what has changed and what has endured over time.*</p>
 
 [Press: <a href="https://time.com/6284174/book-bans-black-children-publishing/">Time Magazine</a>, <a href="https://www.wsj.com/articles/jack-and-the-bean-counters-a-woke-childrens-story-11619199026">Wall Street Journal</a>, <a href="https://www.slj.com/?detailStory=new-study-looks-race-gender-representation-in-award-winning-childrens-books&utm_source=editorial&utm_medium=SLJTW&utm_term=&utm_content=&utm_campaign=articles">School Library Journal</a>, <a href="https://soundcloud.com/codetogether/scivis-unveils-a-billion-cells-covid-19-invisible-monsters">Code Together</a>, <a href="https://inequalitalks.fireside.fm/19">Inequalitalks</a>, <a href="https://www.future-ed.org/what-we-teach-about-race-and-gender/">FutureEd</a>, <a href="https://www.the74million.org/article/study-ai-uncovers-skin-tone-gap-in-most-beloved-childrens-books/">The 74</a>, Named one of the ten most significant studies of 2021 by George Lucas Foundation’s <a href="https://www.edutopia.org/article/10-most-significant-education-studies-2021">Edutopia</a>]
 
@@ -49,31 +62,28 @@ title: " "
 #  **Other Publications**
 <hr>
 
-<a href="https://www.brookings.edu/blog/brown-center-chalkboard/2023/06/02/what-award-winning-childrens-books-teach-children-about-race-and-gender/"><img src="files/brookings_graph.png" align="left"style="width:300px;"></a>  
-<br>
+ 
+<div class="two-columns">
 
-#### “What Award Winning Books Teach Children About Race and Gender" <br> <a href="https://www.brookings.edu/blog/brown-center-chalkboard/2023/06/02/what-award-winning-childrens-books-teach-children-about-race-and-gender/">The Brown Center Chalkboard</a> (June 2023)
+<div class="column">  
 
-##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a>*
+#### “What Award Winning Books Teach Children About Race and Gender" <a href="https://www.brookings.edu/blog/brown-center-chalkboard/2023/06/02/what-award-winning-childrens-books-teach-children-about-race-and-gender/">The Brown Center Chalkboard</a> (June 2023)  
 
+##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a>*  
 
-<br>  
-<br>  
-<br> 
+<a href="https://www.brookings.edu/blog/brown-center-chalkboard/2023/06/02/what-award-winning-childrens-books-teach-children-about-race-and-gender/"><img src="files/brookings_graph.png"style="width:400px;"></a>
+</div>  
 
-<a href="https://urbanlabs.uchicago.edu/attachments/3852964a1741b2115b89c7939d5f829a801a2797/store/0492ff6810730e3681fbbc3bcdcdcf3edae7348addfff6f514e78cc1d2bc/City+Colleges+of+Chicago+Developmental+Education+Case+Study+Report_vFINAL.pdf"><img src="files/deved_graph.png" align="right"style="width:380px;"></a>  
-<br>  
+<div class="column">  
 
-#### “Redesigning Developmental Education Placement Policies: <br> A Case Study of City Colleges of Chicago’s Approach”  <br> <a href="https://urbanlabs.uchicago.edu/attachments/3852964a1741b2115b89c7939d5f829a801a2797/store/0492ff6810730e3681fbbc3bcdcdcf3edae7348addfff6f514e78cc1d2bc/City+Colleges+of+Chicago+Developmental+Education+Case+Study+Report_vFINAL.pdf">The Inclusive Economy Lab</a> (May 2023) 
+#### “Redesigning Developmental Education Placement Policies: A Case Study of City Colleges of Chicago’s Approach” <a href="https://urbanlabs.uchicago.edu/attachments/3852964a1741b2115b89c7939d5f829a801a2797/store/0492ff6810730e3681fbbc3bcdcdcf3edae7348addfff6f514e78cc1d2bc/City+Colleges+of+Chicago+Developmental+Education+Case+Study+Report_vFINAL.pdf">The Inclusive Economy Lab</a> (May 2023)  
 
-##### *with <a href="https://kellyhallberg.wordpress.com/">Kelly Hallberg</a>, <a href="https://urbanlabs.uchicago.edu/people/stephen-stapleton">Stephen Stapleton</a>, and <a href="https://www.linkedin.com/in/kafi-moragne-patterson-phd-913372135/">Kafi Moragne-Patterson</a>*
+##### *with <a href="https://kellyhallberg.wordpress.com/">Kelly Hallberg</a>, <a href="https://urbanlabs.uchicago.edu/people/stephen-stapleton">Stephen Stapleton</a>, and <a href="https://www.linkedin.com/in/kafi-moragne-patterson-phd-913372135/">Kafi Moragne-Patterson</a>*  
+  
+<a href="https://urbanlabs.uchicago.edu/attachments/3852964a1741b2115b89c7939d5f829a801a2797/store/0492ff6810730e3681fbbc3bcdcdcf3edae7348addfff6f514e78cc1d2bc/City+Colleges+of+Chicago+Developmental+Education+Case+Study+Report_vFINAL.pdf"><img src="files/deved_graph.png" style="width:400px;"></a> 
+</div>
 
-&nbsp;
-&nbsp;
-
-
-
-
+</div>
 <br>  
 <br>  
 <br> 
