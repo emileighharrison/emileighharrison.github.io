@@ -13,7 +13,7 @@ title: "About Me"
 
 <font size="3">Hello! I'm a Postdoctoral Scholar at the University of Chicago Harris School of Public Policy <a href="https://urbanlabs.uchicago.edu/labs/inclusiveeconomy">Inclusive Economy Lab</a> and a Principal Investigator at <a href="https://www.miielab.com/">MiiE Lab</a>. In my research, I combine classical causal inference methods with innovative applications of computational social science tools to answer policy relevant questions. I received my PhD from the University of Chicago Harris School of Public Policy where I also completed the Econometrics and Labor Economics fields in the Economics Department.  
 
-My recent work applies natural language processing and computer vision tools to measure how different topics (such as evolution or religion) and different groups (such as women or LGBTQIA+ individuals) have been portrayed within education materials over time.  
+My recent work applies natural language processing and computer vision tools to measure how different topics (such as evolution or religion) and different groups (such as women or LGBTQIA+ individuals) have been portrayed within educational materials over time.  
 
 I also examine the impact of higher education policies on social mobility for students from low-income backgrounds. My work evaluates a range of policies, such as free community college, financial aid program design, articulation agreements, and remedial coursework placement policies.  
 
