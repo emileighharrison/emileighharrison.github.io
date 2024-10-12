@@ -1,5 +1,5 @@
 ---
-title: " "
+title: "Research"
 ---
 <style>
   .two-columns {
@@ -17,6 +17,45 @@ title: " "
 </style>
 <br>  
 <br>  
+
+
+#  **Working Papers**
+<hr>
+#### “Impact of Free Community College: Evidence From Chicago”  **(Job Market Paper)**  
+##### *with <a href="https://kellyhallberg.wordpress.com/">Kelly Hallberg</a>*  
+
+**Permission for public dissemination of results in progress. Draft available upon request (harrisone@uchicago.edu)**
+      
+##### **Abstract**  
+<p>*As the cost of college continues to rise, free community college has emerged as a strategic policy intervention aimed at improving access to higher education and alleviating the burden of student loans. While free community college offers a potentially lower-cost pathway through college, limiting financial aid exclusively to community colleges might have unintended consequences if it diverts students from attending better-resourced 4-year universities, which typically have higher completion rates. This study examines the impact of the Star Scholarship, a merit-based promise program in Chicago offering free community college tuition for high school graduates with at least a 3.0 GPA.  Using a regression discontinuity design, we examine the effect of this policy on not only college enrollment and degree completion but also on college major choices and effort in high school. Furthermore, we explore differential impacts across student subgroups, including low-income students and those likely to be undocumented. This study contributes to our broader understanding of how financial aid design affects economic opportunity for different groups of students, providing valuable insights for policymakers aiming to increase college access and success.  *</p>
+ 
+
+<br>  
+<hr>
+<br> 
+
+#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks”  **(Job Market Paper)**   
+##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>*
+
+      
+##### **Abstract**  
+<a href="https://uchicago.box.com/s/q2a1biy9smrtvbkdp0as1pi2ie8y7yzb"><img src="files/doc_embedding.png" align="right"style="width:470px;"></a> 
+<p>*Curricular materials not only impart knowledge but also instill values and shape collective memory. Growth in U.S. school choice programs has increased public funds directed to religious schools, but little is known about what they teach. We examine textbooks from religious educational settings and from public schools in Texas and California, applying and improving upon computer vision and natural language processing tools to measure topics, values, representation, and portrayal over time. Political polarization suggests a narrative of divergence, but our analysis reveals meaningful parallels between the public school collections overall, while religious textbooks differ notably, featuring less female representation, characters with lighter skin, more  White individuals, and differential portrayal of topics such as evolution and religion. Important similarities, however, also emerge: for example, each collection portrays females in contexts that are more positive but less active and powerful than males, and depicts the U.S. founding era and slavery in similar contexts.*</p>
+
+
+<br>  
+<hr>
+<br> 
+
+#### “Category Embeddings Measure Intersectional Portrayals” (Revision Invited at Nature) 
+##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a> and <a href="http://www.alexeble.com/">Alex Eble</a>*
+      
+##### **Abstract**  
+<img src="files/catbeds.png" align="right"style="width:430px;">
+<p>*Traditional natural language processing tools, which depend on frequent mentions of individual names associated with different identities to measure the context in which different identities are portrayed, have proven effective in uncovering gender bias. However, they fall short in accurately representing other historically marginalized groups due to their infrequent mention. This issue is exacerbated when examining the intersection of two underrepresented groups, whose combined identities are even less represented. To address this limitation, we introduce "Category Embeddings," an innovative approach that leverages traditional word embedding techniques to estimate a single embedding for a set of names associated with a given identity category in contrast to prior approaches that estimate separate embeddings for each individual name. This method enhances the capacity to measure representation of intersectional experiences and significantly improves the accuracy of representation analyses in smaller text samples across all identities. We demonstrate the flexibility of our method through two distinct applications. First, we measure how race-gender identities are portrayed in a century of highly influential children’s books. We find that Black females are most likely associated with struggle and performance arts, Black males with sports and struggle, White females with family and performance arts, and White males with power and business. Second, we measure the representation of queer individuals of different races and genders in two major U.S. newspapers. We find that queer individuals are more likely to be associated with performance arts and less likely to be associated with power than heterosexual individuals of the same race or gender.*</p>
+
+<br> 
+<br> 
 
 #  **Peer-Reviewed Publications** 
 <hr>
@@ -90,31 +129,22 @@ title: " "
 <br> 
 
 
-#  **Works In Progress**
+#  **Selected Works In Progress**
 <hr>
 
-#### “Category Embeddings Measure Intersectional Portrayals” *(Revision Invited at Nature)*  
-*with Anjali Adukia and Alex Eble*
-
-&nbsp; 
-  
-#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks”   
-*with Anjali Adukia*
- 
+#### “Unpacking the Long-Term Impact of Holistic Supports for Community College Students”
+*with Kelly Hallberg and Marianne Bertrand*
 &nbsp;  
-
-#### “Hetereogenous Effects of Free Community College”   
-*with Kelly Hallberg*
-
-&nbsp;  
-
-#### “The Effect of Single Winner Ranked Choice Voting on Descriptive Representation”
-
-&nbsp;  
-  
 
 #### “Skin Color, Marriage Markets, and Women's Empowerment in Bangladesh”   
 *with Anjali Adukia, Nina Buchmann, Erica Field, and Rachel Glennerster*
+&nbsp;  
+
+#### “Influencing Identities: The Impact of Content Creators on Character Representation and Portrayal”
+*with Anjali Adukia and Jake Nicoll* 
+
+
+
 
 
 <br>  
