@@ -45,7 +45,7 @@ data <- data.frame(
        -0.5, -1.6,
       0.1, 1,
       -0.5, 0.75),
-  text = c("Started \n Homeschool", "Got my First \n Library Card",
+  text = c("Homeschooled", "Got my First \n Library Card",
 "Transferred to \n Public School", "Started a Small Business \n to Pay for College", 
 "Started \n Community College", "Transferred \n to UW-Oshkosh",
 "Realized Math was Important", "Became the First in my Family \n to Earn a Bachelor's Degree", 
