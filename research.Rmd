@@ -34,7 +34,7 @@ title: "Research"
 <hr>
 <br> 
 
-#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks”  **(Job Market Paper)**  <a href="https://uchicago.box.com/s/q2a1biy9smrtvbkdp0as1pi2ie8y7yzb">**Draft Available Here**</a> 
+#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks” <a href="https://uchicago.box.com/s/q2a1biy9smrtvbkdp0as1pi2ie8y7yzb">**Draft Available Here**</a> 
 ##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>*
 
       
@@ -43,16 +43,16 @@ title: "Research"
 <p>*Curricular materials not only impart knowledge but also instill values and shape collective memory. Growth in U.S. school choice programs has increased public funds directed to religious schools, but little is known about what they teach. We examine textbooks from religious educational settings and from public schools in Texas and California, applying and improving upon computer vision and natural language processing tools to measure topics, values, representation, and portrayal over time. Political polarization suggests a narrative of divergence, but our analysis reveals meaningful parallels between the public school collections overall, while religious textbooks differ notably, featuring less female representation, characters with lighter skin, more  White individuals, and differential portrayal of topics such as evolution and religion. Important similarities, however, also emerge: for example, each collection portrays females in contexts that are more positive but less active and powerful than males, and depicts the U.S. founding era and slavery in similar contexts.*</p>
 
 
-<br>  
-<hr>
-<br> 
+<!-- <br>   -->
+<!-- <hr> -->
+<!-- <br>  -->
 
-#### “Category Embeddings Measure Intersectional Portrayals” (Revision Invited at Nature) 
-##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a> and <a href="http://www.alexeble.com/">Alex Eble</a>*
-      
-##### **Abstract**  
-<img src="files/catbeds.png" align="right"style="width:430px;">
-<p>*Traditional natural language processing tools, which depend on frequent mentions of individual names associated with different identities to measure the context in which different identities are portrayed, have proven effective in uncovering gender bias. However, they fall short in accurately representing other historically marginalized groups due to their infrequent mention. This issue is exacerbated when examining the intersection of two underrepresented groups, whose combined identities are even less represented. To address this limitation, we introduce "Category Embeddings," an innovative approach that leverages traditional word embedding techniques to estimate a single embedding for a set of names associated with a given identity category in contrast to prior approaches that estimate separate embeddings for each individual name. This method enhances the capacity to measure representation of intersectional experiences and significantly improves the accuracy of representation analyses in smaller text samples across all identities. We demonstrate the flexibility of our method through two distinct applications. First, we measure how race-gender identities are portrayed in a century of highly influential children’s books. We find that Black females are most likely associated with struggle and performance arts, Black males with sports and struggle, White females with family and performance arts, and White males with power and business. Second, we measure the representation of queer individuals of different races and genders in two major U.S. newspapers. We find that queer individuals are more likely to be associated with performance arts and less likely to be associated with power than heterosexual individuals of the same race or gender.*</p>
+<!-- #### “Category Embeddings Measure Intersectional Portrayals” (Revision Invited at Nature)  -->
+<!-- ##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a> and <a href="http://www.alexeble.com/">Alex Eble</a>* -->
+
+<!-- ##### **Abstract**   -->
+<!-- <img src="files/catbeds.png" align="right"style="width:430px;"> -->
+<!-- <p>*Traditional natural language processing tools, which depend on frequent mentions of individual names associated with different identities to measure the context in which different identities are portrayed, have proven effective in uncovering gender bias. However, they fall short in accurately representing other historically marginalized groups due to their infrequent mention. This issue is exacerbated when examining the intersection of two underrepresented groups, whose combined identities are even less represented. To address this limitation, we introduce "Category Embeddings," an innovative approach that leverages traditional word embedding techniques to estimate a single embedding for a set of names associated with a given identity category in contrast to prior approaches that estimate separate embeddings for each individual name. This method enhances the capacity to measure representation of intersectional experiences and significantly improves the accuracy of representation analyses in smaller text samples across all identities. We demonstrate the flexibility of our method through two distinct applications. First, we measure how race-gender identities are portrayed in a century of highly influential children’s books. We find that Black females are most likely associated with struggle and performance arts, Black males with sports and struggle, White females with family and performance arts, and White males with power and business. Second, we measure the representation of queer individuals of different races and genders in two major U.S. newspapers. We find that queer individuals are more likely to be associated with performance arts and less likely to be associated with power than heterosexual individuals of the same race or gender.*</p> -->
 
 <br> 
 <br> 
