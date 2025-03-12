@@ -38,19 +38,19 @@ data <- data.frame(
       2013, 2015,
       2016.7, 2017.75, 
       2017.75, 2019.75,
-      2023.5, 2024.5),
+      2023.25, 2024, 2025.85),
   y=c(0.1, -0.4,
       0.05, -1,
       1.1, 0.7,
        -0.5, -1.6,
       0.1, 1,
-      -0.5, 0.75),
+      -0.5, 0.75, 0.25),
   text = c("Homeschooled", "Got my First \n Library Card",
 "Transferred to \n Public School", "Started a Small Business \n to Pay for College", 
 "Started \n Community College", "Transferred \n to UW-Oshkosh",
-"Realized Math was Important", "Became the First in my Family \n to Earn a Bachelor's Degree", 
+"Realized Math\n was Important", "Became the First in my Family \n to Earn a Bachelor's Degree", 
 "Graduated with BBA\nfrom UW-Oshkosh", "Started PhD Program\nat UChicago",
-"First Econ Publication\n(Published in QJE)", "Earned PhD")
+"First Econ Publication\n(Published in QJE)", "Earned PhD", "Joined UT Austin\n as Assistant Prof.")
 )
 
 data$color <- ifelse(data$y>0,"academic","personal") %>% as.factor()
@@ -78,7 +78,7 @@ ggplot(data, aes(x=x, y=y)) +
   xlab("") +
   ylab("") +
   ylim(-2,2) + 
-  xlim(1999,2025) + 
+  xlim(1999.85,2026.5) + 
   geom_text(aes(label = text, y=shift), size = 2.5, color="grey20") +
   annotate("text", x = 2000, y = 0.08, label = "2000", color="grey60", size=3) + 
     annotate("text", x = 2005, y = 0.08, label = "2005", color="grey60", size=3) + 
