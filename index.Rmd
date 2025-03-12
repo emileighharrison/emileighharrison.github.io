@@ -11,7 +11,7 @@ title: "About Me"
 
 &nbsp;
 
-<font size="3">Hello! I'm a Postdoctoral Scholar at the <a href="https://urbanlabs.uchicago.edu/labs/inclusiveeconomy">University of Chicago Inclusive Economy Lab</a> and a Principal Investigator at <a href="https://www.miielab.com/">MiiE Lab</a>.  I received my PhD from the Harris School of Public Policy at the University of Chicago where I also completed the Econometrics and Labor Economics fields in the Economics Department. **I am on the 2024-2025 academic job market**.
+<font size="3">Hello! I'm a Postdoctoral Scholar at the <a href="https://urbanlabs.uchicago.edu/labs/inclusiveeconomy">University of Chicago Inclusive Economy Lab</a>, a Principal Investigator at <a href="https://www.miielab.com/">MiiE Lab</a>, and an **incoming Assistant Professor in the LBJ school of Public Affairs at the University of Texas at Austin**.  I received my PhD from the Harris School of Public Policy at the University of Chicago where I also completed the Econometrics and Labor Economics fields in the Economics Department. 
 
 In my research, I investigate the causes and consequences of inequality in variety of contexts. Much of my work is centered on understanding barriers to education --such as financial constraints or beliefs about academic abilities shaped by representation-- and the role that education policy can play in eliminating them.  I particularly focus on non-traditional and informal educational contexts, including community colleges, homeschooling environments, and religious private schools. 
 
