@@ -34,7 +34,7 @@ title: "Research"
 <hr>
 <br> 
 
-#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks” <a href="https://www.nber.org/papers/w33791?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg2">**Working Paper Here**</a> 
+#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks” **(Under Revision at REStud)** <a href="https://www.nber.org/papers/w33791?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg2">**Draft Available Here**</a> 
 ##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>*
 
       
@@ -107,20 +107,33 @@ title: "Research"
 
 <div class="column">  
 
-#### “What Award Winning Books Teach Children About Race and Gender" <a href="https://www.brookings.edu/blog/brown-center-chalkboard/2023/06/02/what-award-winning-childrens-books-teach-children-about-race-and-gender/">The Brown Center Chalkboard</a> (June 2023)  
+#### “Supporting the Early Academic Momentum of Community College Students: Examining the Impact of Incorporating GPA into Course Placement” <a href="https://urbanlabs.uchicago.edu/attachments/eeef833dbee46f3e7221dc0525e43afe44c76ad7/store/673250c624a4cedb93fcb889359064411de631f5b2505f2962054b691b61/Dev+Ed+White+Paper_FINAL+.pdf
+">The Inclusive Economy Lab</a> (July 2025)  
 
-##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a>*  
+##### *with <a href="https://kellyhallberg.wordpress.com/">Kelly Hallberg</a>, Adam Leader-Smith, Elijah Ruiz, Marvin Slaughter, and Courtney Washington*  
+  
+  
+<a href="https://urbanlabs.uchicago.edu/attachments/eeef833dbee46f3e7221dc0525e43afe44c76ad7/store/673250c624a4cedb93fcb889359064411de631f5b2505f2962054b691b61/Dev+Ed+White+Paper_FINAL+.pdf"><img src="files/deved_graph2.png" style="width:400px;"></a> 
 
-<a href="https://www.brookings.edu/blog/brown-center-chalkboard/2023/06/02/what-award-winning-childrens-books-teach-children-about-race-and-gender/"><img src="files/brookings_graph.png"style="width:400px;"></a>
-</div>  
 
-<div class="column">  
-
+ 
+ 
 #### “Redesigning Developmental Education Placement Policies: A Case Study of City Colleges of Chicago’s Approach” <a href="https://urbanlabs.uchicago.edu/attachments/3852964a1741b2115b89c7939d5f829a801a2797/store/0492ff6810730e3681fbbc3bcdcdcf3edae7348addfff6f514e78cc1d2bc/City+Colleges+of+Chicago+Developmental+Education+Case+Study+Report_vFINAL.pdf">The Inclusive Economy Lab</a> (May 2023)  
 
 ##### *with <a href="https://kellyhallberg.wordpress.com/">Kelly Hallberg</a>, <a href="https://urbanlabs.uchicago.edu/people/stephen-stapleton">Stephen Stapleton</a>, and <a href="https://www.linkedin.com/in/kafi-moragne-patterson-phd-913372135/">Kafi Moragne-Patterson</a>*  
   
 <a href="https://urbanlabs.uchicago.edu/attachments/3852964a1741b2115b89c7939d5f829a801a2797/store/0492ff6810730e3681fbbc3bcdcdcf3edae7348addfff6f514e78cc1d2bc/City+Colleges+of+Chicago+Developmental+Education+Case+Study+Report_vFINAL.pdf"><img src="files/deved_graph.png" style="width:400px;"></a> 
+
+</div> 
+
+<div class="column">  
+
+#### “What Award Winning Books Teach Children About Race and Gender" <a href="https://www.brookings.edu/blog/brown-center-chalkboard/2023/06/02/what-award-winning-childrens-books-teach-children-about-race-and-gender/">The Brown Center Chalkboard</a> (June 2023)  
+
+##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="http://www.alexeble.com/">Alex Eble</a>*  
+
+<a href="https://www.brookings.edu/blog/brown-center-chalkboard/2023/06/02/what-award-winning-childrens-books-teach-children-about-race-and-gender/"><img src="files/brookings_graph.png"style="width:400px;"></a>
+
 </div>
 
 </div>
@@ -133,7 +146,7 @@ title: "Research"
 <hr>
 
 #### “Unpacking the Long-Term Impact of Holistic Supports for Community College Students”
-*with Marianne Bertrand and Kelly Hallberg*
+*with Kelly Hallberg*
 &nbsp;  
 
 #### “Skin Color, Marriage Markets, and Women's Empowerment in Bangladesh”   

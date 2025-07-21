@@ -35,7 +35,7 @@ I'm a first generation college student and a community college alumna who is com
 &nbsp;  
 
 ## Personal Timeline
-```{r echo=FALSE, warnings=FALSE, fig.align = "center", out.width = '100%'}
+```{r echo=FALSE, warning=FALSE, fig.align = "center", out.width = '100%', messages=FALSE}
 # Libraries
 library(ggplot2)
 library(magrittr)
