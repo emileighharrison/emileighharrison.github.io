@@ -21,7 +21,7 @@ title: "Research"
 
 #  **Working Papers**
 <hr>
-#### “Impact of Free Community College: Evidence From Chicago”  **(Job Market Paper)**  <a href="https://uchicago.box.com/s/253wguiv6o0yd44abtu9mu3hpkqz4z9z">**Draft Available Here**</a> 
+#### “Impact of Free Community College: Evidence From Chicago”  **(Job Market Paper)**  <a href="https://uchicago.box.com/s/253wguiv6o0yd44abtu9mu3hpkqz4z9z">**Link to Paper**</a> 
 ##### *with <a href="https://kellyhallberg.wordpress.com/">Kelly Hallberg</a>*  
 
 
@@ -34,7 +34,21 @@ title: "Research"
 <hr>
 <br> 
 
-#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks” **(Under Revision at REStud)** <a href="https://www.nber.org/papers/w33791?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg2">**Draft Available Here**</a> 
+
+#### “Supporting the Early Academic Momentum of Community College Students: Examining the Impact of Incorporating GPA into Course Placement” <a href="https://urbanlabs.uchicago.edu/attachments/eeef833dbee46f3e7221dc0525e43afe44c76ad7/store/673250c624a4cedb93fcb889359064411de631f5b2505f2962054b691b61/Dev+Ed+White+Paper_FINAL+.pdf">**Link to Paper**</a>  
+##### *with <a href="https://kellyhallberg.wordpress.com/">Kelly Hallberg</a>, Adam Leader-Smith, Elijah Ruiz, Marvin Slaughter, and Courtney Washington*  
+  
+##### **Abstract**  
+<a href="https://urbanlabs.uchicago.edu/attachments/eeef833dbee46f3e7221dc0525e43afe44c76ad7/store/673250c624a4cedb93fcb889359064411de631f5b2505f2962054b691b61/Dev+Ed+White+Paper_FINAL+.pdf"><img src="files/deved_graph2.png" align="left"style="width:430px;"></a> 
+<p>*Placing community college students into their first math or English course is a critical decision with significant implications. Students placed into coursework that is too challenging may struggle to persist, while those placed into unnecessary developmental coursework may experience reduced academic momentum, delayed graduation, and increased costs. Recent research has found that using multiple measures for placement, like high school GPA alongside standardized test scores, can improve placement accuracy and student’s academic outcomes. This study assesses the impact of a new multiple measure placement policy at City Colleges of Chicago, which “boosts” students with a high school GPA of 3.0 or above into higher math and English course levels, reducing their need for developmental education. In practice, the math and English placement boost applied to fewer than 5 percent and 8 percent of students, respectively, with even fewer students taking advantage of the boosted placement. Despite the small number of affected students, using a difference in regression discontinuity design we find that access to a placement boost in math or English courses decreased the number of developmental courses taken by students without affecting overall academic performance or persistence. However, it also led to delayed course-taking for these required math and English courses. Qualitative findings from interviews with students revealed a lack of awareness about the policy, suggesting a need for better communication and easier transcript sharing between Chicago Public Schools and City Colleges to maximize policy benefits.*</p>
+  
+
+
+<br>  
+<hr>
+<br> 
+
+#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks” **(Under Revision at The Review of Economic Studies)** <a href="https://www.nber.org/papers/w33791?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg2">**Link to Paper**</a> 
 ##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>*
 
       
@@ -47,7 +61,7 @@ title: "Research"
 <!-- <hr> -->
 <!-- <br>  -->
 
-<!-- #### “Category Embeddings Measure Intersectional Portrayals” (Revision Invited at Nature)  -->
+<!-- #### “Category Embeddings Measure Intersectional Portrayals”  -->
 <!-- ##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a> and <a href="http://www.alexeble.com/">Alex Eble</a>* -->
 
 <!-- ##### **Abstract**   -->
@@ -106,17 +120,6 @@ title: "Research"
 <div class="two-columns">
 
 <div class="column">  
-
-#### “Supporting the Early Academic Momentum of Community College Students: Examining the Impact of Incorporating GPA into Course Placement” <a href="https://urbanlabs.uchicago.edu/attachments/eeef833dbee46f3e7221dc0525e43afe44c76ad7/store/673250c624a4cedb93fcb889359064411de631f5b2505f2962054b691b61/Dev+Ed+White+Paper_FINAL+.pdf
-">The Inclusive Economy Lab</a> (July 2025)  
-
-##### *with <a href="https://kellyhallberg.wordpress.com/">Kelly Hallberg</a>, Adam Leader-Smith, Elijah Ruiz, Marvin Slaughter, and Courtney Washington*  
-  
-  
-<a href="https://urbanlabs.uchicago.edu/attachments/eeef833dbee46f3e7221dc0525e43afe44c76ad7/store/673250c624a4cedb93fcb889359064411de631f5b2505f2962054b691b61/Dev+Ed+White+Paper_FINAL+.pdf"><img src="files/deved_graph2.png" style="width:400px;"></a> 
-
-
- 
  
 #### “Redesigning Developmental Education Placement Policies: A Case Study of City Colleges of Chicago’s Approach” <a href="https://urbanlabs.uchicago.edu/attachments/3852964a1741b2115b89c7939d5f829a801a2797/store/0492ff6810730e3681fbbc3bcdcdcf3edae7348addfff6f514e78cc1d2bc/City+Colleges+of+Chicago+Developmental+Education+Case+Study+Report_vFINAL.pdf">The Inclusive Economy Lab</a> (May 2023)  
 

@@ -27,7 +27,7 @@ library(wordcloud2)
 library("htmlwidgets")
 library(webshot)
 library(readr)
-webshot::install_phantomjs()
+# webshot::install_phantomjs()
 
 counts <- read_csv("files/words.csv")
 
