@@ -26,7 +26,7 @@ title: "Research"
 
 
 ##### **Abstract**  
-<img src="files/earned_associate_within_3_years_blog.png" align="right"style="width:430px;">
+<img src="files/earned_associate_within_3_years_blog.png" align="right"style="width:400px;">
 <p>*Free community college is often promoted as a way to expand access and reduce student debt, but may have unintended consequences if it reduces bachelor's degree completion for students diverted from better resourced four-year universities. By examining a merit-based free community college program in Chicago called the Star Scholarship, we identify the impact of free community college on a distinct set of students: those likely to be deciding where to enroll rather than whether to enroll in college. Using a regression discontinuity design around the 3.0 GPA cutoff, we find that eligibility for merit-based free community college does not increase overall college enrollment, but does significantly shift students from starting at 4-year universities to first enrolling at community colleges. Notably, this diversion does not reduce the probability of eventually earning a bachelor’s degree within six years of graduating high school and eligible students are 2.1 percentage points more likely to earn an associate degree within three years. There is no evidence of a large decrease in the quality of the first college a student enrolls in nor do we see a decline in STEM degree completion for eligible students. Take-up is highest among students likely to be from immigrant families, highlighting unmet financial need among this group. These findings suggest that for the average student near the merit threshold, free community college can increase degree attainment without causing students to substitute two-year degrees for four-year degrees.*</p>
 
 
@@ -34,7 +34,7 @@ title: "Research"
 <hr>
 <br> 
 
-#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks” **(Under Revision at The Review of Economic Studies)** <a href="https://www.nber.org/papers/w33791?utm_campaign=ntwh&utm_medium=email&utm_source=ntwg2">**Link to Paper**</a> 
+#### “Separation of Church and State Curricula? Examining Public and Religious Private School Textbooks” **(Under Revision at The Review of Economic Studies)** <a href="https://utexas.app.box.com/s/zal5sb3b11saipgd0e38ihu3gxw5fm6r">**Link to Paper**</a> 
 ##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>*
 
       
@@ -60,6 +60,18 @@ title: "Research"
 <hr>
 <br> 
 
+
+#### “(How) Do We Teach Emotions?” <a href="https://utexas.box.com/s/iwc8bincrahxijp1up6b05i23wisty4a">**Link to Paper**</a>  
+##### *with <a href="https://voices.uchicago.edu/anjali/research/">Anjali Adukia</a>, <a href="https://lawecon.ethz.ch/group/scientific-team/bonci.html">Matt Bonci</a>, <a href="https://pauladastresg.github.io/index.html">Paula Dastres</a>, <a href="https://jwnicoll.github.io/">Jake Nicoll</a>, and <a href="https://github.com/DoraSzasz">Teodora Szasz</a>*
+  
+##### **Abstract**  
+<a href="https://utexas.box.com/s/iwc8bincrahxijp1up6b05i23wisty4a"><img src="files/llm_miie8.png" align="right"style="width:430px;"></a> 
+<p>*Emotional intelligence is a key component of human capital, shaped in part by the educational materials children consume. These materials send messages about the emotional reactions that are and are not socially appropriate. In this study, we apply natural language processing and computer vision tools to examine the emotional representations conveyed in the text and images of influential educational materials: public school elementary textbooks and award winning children's literature. Our analysis reveals a stark mismatch between the emotions children read about and the ones they see in images. We find that textual context exposes children to a diverse emotional landscape, including happiness, sadness, anger, and calm, all with relatively balanced frequency. In contrast, pictured characters overwhelmingly display happiness and calm, while ``negatively'' valenced emotions rarely appear. This pattern persists across time, genre categories, and demographic subgroups in our corpus. Using individual-level book purchases and library inventory data, we provide evidence that the overrepresentation of happy and calm emotions in visual content reflect supply-side responses to consumer preferences.*</p>
+
+
+<br>
+<hr>
+<br> 
 
 #### “Supporting the Early Academic Momentum of Community College Students: Examining the Impact of Incorporating GPA into Course Placement” <a href="https://urbanlabs.uchicago.edu/attachments/eeef833dbee46f3e7221dc0525e43afe44c76ad7/store/673250c624a4cedb93fcb889359064411de631f5b2505f2962054b691b61/Dev+Ed+White+Paper_FINAL+.pdf">**Link to Paper**</a>  
 ##### *with <a href="https://kellyhallberg.wordpress.com/">Kelly Hallberg</a>, Adam Leader-Smith, Elijah Ruiz, Marvin Slaughter, and Courtney Washington*  
@@ -167,10 +179,6 @@ title: "Research"
 
 #### “Community College Deserts and Labor Market Outcomes”
 *with Riley Acton, Kalena E. Cortes, Lois Miller, and Camila Morales*
-&nbsp;  
-
-#### “(How) Do We Teach Emotions?”
-*with Anjali Adukia, Matthew Bonci, Paula Dastres, Jake Nicoll, and Teodora Szasz*
 &nbsp;  
 
 #### “Skin Color, Marriage Markets, and Women's Empowerment in Bangladesh”   
