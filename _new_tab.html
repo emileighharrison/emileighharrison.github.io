@@ -1,0 +1,11 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(
+    '.navbar a[href*="scholar.google.com"], ' +
+    '.navbar a[href="files/emileigh_harrison_cv.pdf"]'
+  ).forEach(function (link) {
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener noreferrer");
+  });
+});
+</script>
